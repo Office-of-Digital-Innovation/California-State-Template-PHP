@@ -1,0 +1,69 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if IE 9]>    <html class="no-js ie9 oldie" lang="en"> <![endif]-->
+<!--[if (gt IE 9)]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+<!-- 
+California State Template
+Version 5.0
+ 
+Based on Twitter Bootstrap
+-->
+<meta charset="utf-8">
+
+<title>Sample - Panels With Photos</title>
+
+<meta name="Author" content="State of California" />
+<meta name="Description" content="State of California" />
+<meta name="Keywords" content="California, government" />
+
+<?php include_once("../ssi/head-css-js.php");?>
+</head>
+
+<body>
+
+<header role="banner" id="header" class="global-header">
+	<div id="skip-to-content"><a href="#main-content">Skip to Main Content</a></div>
+    <!-- Include Branding -->
+    <?php include_once("../ssi/branding.php");?>    
+    <!-- Include Mobile Controls -->
+    <?php include_once("../ssi/mobile-controls.php");?>    <div class="navigation-search">
+        <div id="head-search" class="search-container">
+            <!-- Include Search -->
+            <?php include_once("../ssi/search.php");?>        </div>
+        
+        <!-- Include Navigation -->
+        <?php include_once("../ssi/navigation.php");?>    </div>
+	<div class="header-decoration"></div>
+</header>
+
+<div id="main-content" class="main-content">
+    <div class="wrapper">
+        <main class="main-primary">
+            <ol class="breadcrumb">
+                <li><a href="../index.php">Home</a></li>
+                <li><a href="index.php">Examples</a></li>
+                <li class="active">Panels With Photos</li>
+            </ol>
+            
+            <h1>Panels with Photos</h1>
+                <p>Panels can be extended to include an optional photo background on the left or right. Add a <code>.photo-right</code> or <code>.photo-left</code> class to the <code>.panel</code> div.</p>
+                <p>Before the closing .panel-body div, add a new div with a class of <code>.photo</code> and also an inline style with a link to your background-image. e.g. <code>style="background-image: url('/path/to/photo.jpg');"</code> Alternatively, webmasters can move this inline style to their own custom stylesheet if that is more preferable.</p>
+                
+                <hr>
+                <h2>Examples:</h2>
+            <?php include("../sample/modules/panel-photo.php");?>                
+                <hr>
+                <h2><label for="sample-panel-photo">Source Code:</label></h2>
+                <textarea id="sample-panel-photo" class="form-control" rows="10" cols="80"><?php include("../sample/modules/panel-photo.php");?></textarea>
+        </main>
+        
+    </div>
+</div>
+
+<?php include_once("../ssi/global-footer.php");?>
+<?php include_once("../ssi/scripts.php");?>
+</body>
+</html>
