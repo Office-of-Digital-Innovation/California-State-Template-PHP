@@ -36,7 +36,7 @@
                  </div>
 			</li>
             <li class="nav-item">
-            	<a href="http://2014-template.sites.local/sample/dev.html" class="first-level-link">Link 2 This one will be long</a>
+            	<a href="http://2014-template.sites.local/sample/dev.php"> class="first-level-link">Link 2 This one will be long</a>
 				<div class="sub-nav">
                     <ul class="second-level-nav">
                         <li>

@@ -1,8 +1,6 @@
 <div class="section section-understated collapsed">
     <div class="service-group clearfix"  id="service-group-123">
-	<?php
-	include_once("sample/modules/service-tiles-empty.php");
-	?>
+        <?php include_once("sample/modules/service-tiles-empty.php"); ?>
     </div>
 
     <div class="more-button" >

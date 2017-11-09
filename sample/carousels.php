@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
 <!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
 <!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
@@ -17,30 +17,43 @@ Based on Twitter Bootstrap
     <meta name="Author" content="State of California" />
     <meta name="Description" content="State of California" />
     <meta name="Keywords" content="California, government" />
-    <?php include_once("../ssi/head-css-js.php");?></head>
+    <?php include_once("../ssi/head-css-js.php"); ?>
+</head>
 
 <!-- possibly body classes are primary and two-column -->
 <body>
     <header role="banner" id="header" class="global-header">
-        <div id="skip-to-content"><a href="#main-content">Skip to Main Content</a></div>
+        <div id="skip-to-content"><a href="#main-content">Skip to Main Content</a></div>    
+        <!-- Location Bar -->        
+		<?php include_once("../ssi/location-bar.php"); ?>
+        
+        <!-- Include Utility Header -->
+		<?php include_once("../ssi/utility-header.php"); ?>	
+        
+        <!-- Settings Bar -->	
+		<?php include_once("../ssi/settings-bar.php"); ?>
 
-        <!-- Include Branding -->
-        <?php include_once("../ssi/branding.php");?>
+		<!-- Include Branding -->
+		<?php include_once("../ssi/branding.php"); ?>
+
         <!-- Include Mobile Controls -->
-        <?php include_once("../ssi/mobile-controls.php");?>
+        <?php include_once("../ssi/mobile-controls.php"); ?>
+
         <div class="navigation-search">
 
             <div id="head-search" class="search-container">
                 <!-- Include Search -->
-                <?php include_once("../ssi/search.php");?>            </div>
+                <?php include_once("../ssi/search.php"); ?>
+            </div>
 
             <!-- Include Navigation -->
-            <?php include_once("../ssi/navigation.php");?>        </div>
+            <?php include_once("../ssi/navigation.php"); ?>
+        </div>
         <div class="header-decoration"></div>
     </header>
 
     <div id="main-content" class="main-content">
-        <div class="wrapper">
+        <div class="section">
             <main class="main-primary">
                 <ol class="breadcrumb">
                     <li><a href="../index.php">Home</a></li>
@@ -60,7 +73,7 @@ Based on Twitter Bootstrap
                     </div>
                     <div class="third">
                         <h2><label for="sample-blank">Source Code:</label></h2>
-                        <textarea id="sample-blank" class="form-control" rows="10" cols="80"><?php include_once("../sample/modules/carousel-content-blank.php");?></textarea>
+                        <textarea id="sample-blank" class="form-control" rows="10" cols="80"><?php include("../sample/modules/carousel-content-blank.php"); ?></textarea>
                     </div>
                 </div>
                 <div class="container">
@@ -76,10 +89,11 @@ Based on Twitter Bootstrap
   &lt;/div&gt;
 &lt;/div&gt;
 </code></pre>
-                        <?php include_once("../sample/modules/carousel-content.php");?>                    </div>
+                        <?php include("../sample/modules/carousel-content.php"); ?>
+                    </div>
                     <div class="third">
                         <h2><label for="sample-content">Source Code:</label></h2>
-                        <textarea id="sample-content" class="form-control" rows="10" cols="80"><?php include("../sample/modules/carousel-content.php");?></textarea>
+                        <textarea id="sample-content" class="form-control" rows="10" cols="80"><?php include("../sample/modules/carousel-content.php"); ?></textarea>
                     </div>
                 </div>
 
@@ -99,18 +113,20 @@ Based on Twitter Bootstrap
       &lt;/div&gt;
   &lt;/div&gt;
 </code></pre>
-                        <?php include_once("../sample/modules/carousel-content-fit-image.php");?>                    </div>
+                        <?php include("../sample/modules/carousel-content-fit-image.php"); ?>
+                    </div>
                     <div class="third">
                         <h2><label for="sample-fit-img">Source Code:</label></h2>
-                        <textarea id="sample-fit-img" class="form-control" rows="10" cols="80"><?php include("../sample/modules/carousel-content-fit-image.php");?></textarea>
+                        <textarea id="sample-fit-img" class="form-control" rows="10" cols="80"><?php include("../sample/modules/carousel-content-fit-image.php"); ?></textarea>
                     </div>
                 </div>
 
                 <hr>
 
                 <h2>Video Carousel</h2>
-                <?php include_once("../sample/modules/carousel-video.php");?>                <h2><label for="sample-carousel-video">Source Code:</label></h2>
-                <textarea id="sample-carousel-video" class="form-control" rows="10" cols="80"><?php include("../sample/modules/carousel-video.php");?></textarea>
+                <?php include("../sample/modules/carousel-video.php"); ?>
+                <h2><label for="sample-carousel-video">Source Code:</label></h2>
+                <textarea id="sample-carousel-video" class="form-control" rows="10" cols="80"><?php include("../sample/modules/carousel-video.php"); ?></textarea>
 
                 <hr>
 
@@ -125,34 +141,40 @@ Based on Twitter Bootstrap
                         </div>
                     </div>
                     <div class="panel-body">
-                        <?php include_once("../sample/modules/carousel-media.php");?>                    </div>
+                        <?php include("../sample/modules/carousel-media.php"); ?>
+                    </div>
                 </div>
 
                 <h3>Media Carousel without Panel</h3>
-                <?php include_once("../sample/modules/carousel-media.php");?>                <h2><label for="sample-carousel-media">Source Code:</label></h2>
-                <textarea id="sample-carousel-media" class="form-control" rows="10" cols="80"><?php include("../sample/modules/carousel-media.php");?></textarea>
+                <?php include("../sample/modules/carousel-media.php"); ?>
+                <h2><label for="sample-carousel-media">Source Code:</label></h2>
+                <textarea id="sample-carousel-media" class="form-control" rows="10" cols="80"><?php include("../sample/modules/carousel-media.php"); ?></textarea>
 
                 <hr>
 
                 <h1>Link Carousel</h1>
                 <p>The Link Carousel scrolls through a set of image links. It will scroll a set of items contained in a container with class <code>.carousel-link</code>.</p>
                 <h2>Link Icon Carousel Example</h2>
-                <?php include_once("../sample/modules/carousel-link.php");?>                <h2><label for="sample-carousel-link">Source Code:</label></h2>
-                <textarea id="sample-carousel-link" class="form-control" rows="10" cols="80"><?php include("../sample/modules/carousel-link.php");?></textarea>
+                <?php include("../sample/modules/carousel-link.php"); ?>
+                <h2><label for="sample-carousel-link">Source Code:</label></h2>
+                <textarea id="sample-carousel-link" class="form-control" rows="10" cols="80"><?php include("../sample/modules/carousel-link.php"); ?></textarea>
             </main>
 
             <div class="main-secondary">
                 <h1>Social Media Slider</h1>
                 <p>The Social Media Slider displays one item at a time. It will slide a set of items contained in a container with class <code>.carousel-slider</code>.</p>
                 <h2>Social Media Slider Example</h2>
-                <?php include_once("../sample/modules/carousel-slider.php");?>                <h2><label for="sample-carousel-slider">Source Code:</label></h2>
-                <textarea id="sample-carousel-slider" class="form-control" rows="10" cols="80"><?php include("../sample/modules/carousel-slider.php");?></textarea>
+                <?php include("../sample/modules/carousel-slider.php"); ?>
+                <h2><label for="sample-carousel-slider">Source Code:</label></h2>
+                <textarea id="sample-carousel-slider" class="form-control" rows="10" cols="80"><?php include("../sample/modules/carousel-slider.php"); ?></textarea>
             </div>
         </div>
     </div>
 
-    <?php include_once("../ssi/global-footer.php");?>
-    <?php include_once("../ssi/scripts.php");?>
+    <?php include_once("../ssi/global-footer.php"); ?>
+
+    <?php include_once("../ssi/scripts.php"); ?>
+
 </body>
 
 </html>

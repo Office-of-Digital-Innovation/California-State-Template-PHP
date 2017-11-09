@@ -108,7 +108,8 @@
                 <div class="group">
                     <div class="results-list">
                         <div class="half">
-                            <?php include_once("../ssi/service-card.php");?>                        </div>
+                            <?php include_once("../ssi/service-card.html.php"); ?>
+                        </div>
                         <div class="half">
                             <div class="card card-default card-block text-muted text-center">Placeholder</div>
                         </div>

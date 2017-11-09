@@ -19,28 +19,42 @@ Based on Twitter Bootstrap
 <meta name="Description" content="State of California" />
 <meta name="Keywords" content="California, government" />
 
-<?php include_once("../ssi/head-css-js.php");?>
+<?php include_once("../ssi/head-css-js.php"); ?>
+
 </head>
 
 <body>
 
 <header role="banner" id="header" class="global-header">
-	<div id="skip-to-content"><a href="#main-content">Skip to Main Content</a></div>
-    <!-- Include Branding -->
-    <?php include_once("../ssi/branding.php");?>    
+	<div id="skip-to-content"><a href="#main-content">Skip to Main Content</a></div>    
+        <!-- Location Bar -->        
+		<?php include_once("../ssi/location-bar.php"); ?>
+        
+        <!-- Include Utility Header -->
+		<?php include_once("../ssi/utility-header.php"); ?>	
+        
+        <!-- Settings Bar -->	
+		<?php include_once("../ssi/settings-bar.php"); ?>
+
+		<!-- Include Branding -->
+		<?php include_once("../ssi/branding.php"); ?>
+    
     <!-- Include Mobile Controls -->
-    <?php include_once("../ssi/mobile-controls.php");?>    <div class="navigation-search">
+    <?php include_once("../ssi/mobile-controls.php"); ?>
+    <div class="navigation-search">
         <div id="head-search" class="search-container">
             <!-- Include Search -->
-            <?php include_once("../ssi/search.php");?>        </div>
+            <?php include_once("../ssi/search.php"); ?>
+        </div>
         
         <!-- Include Navigation -->
-        <?php include_once("../ssi/navigation.php");?>    </div>
+        <?php include_once("../ssi/navigation.php"); ?>
+    </div>
 	<div class="header-decoration"></div>
 </header>
 
 <div id="main-content" class="main-content">
-    <div class="wrapper">
+    <div class="section">
         <main class="main-primary">
             <ol class="breadcrumb">
                 <li><a href="../index.php">Home</a></li>
@@ -50,10 +64,12 @@ Based on Twitter Bootstrap
             
             <p>This is an alternative layout for the exam detail page. See also <a href="exam-detail.php">Exam Details</a> main page for more information on the usage and options for this module.</p>
             
-            <?php include_once("../sample/modules/schema-boilerplate.php");?>            
+            <?php include("../sample/modules/schema-boilerplate.php"); ?>
+            
             <div class="group">
                 <div class="two-thirds">
-                    <?php include_once("../sample/modules/exam-detail-panel.php");?>                </div>
+                    <?php include("../sample/modules/exam-detail-panel.php"); ?>
+                </div>
                  <div class="third">
                     <h2>Source Code:</h2>
                     
@@ -65,11 +81,11 @@ Based on Twitter Bootstrap
                         <!-- Tab panes -->
                         <div class="tab-content responsive">
                             <div class="tab-pane active" id="html">
-                                 <textarea class="form-control" rows="10" cols="80"><?php include_once("../sample/modules/exam-detail-panel.php");?></textarea>
+                                 <textarea class="form-control" rows="10" cols="80"><?php include("../sample/modules/exam-detail-panel.php"); ?></textarea>
                             </div>
                             <div class="tab-pane" id="microdata">
                                 <p class="alert alert-info">NOTE: This module makes use of a <code>datetime</code> property set in the <strong>ISO 8601</strong> format. Be sure to set the time correctly.</p>
-                                 <textarea class="form-control" rows="10" cols="80"><?php include_once("../sample/modules/exam-detail-panel-schema.php");?></textarea>
+                                 <textarea class="form-control" rows="10" cols="80"><?php include("../sample/modules/exam-detail-panel-schema.php"); ?></textarea>
                             </div>
                         </div>
                     </div>
@@ -79,7 +95,9 @@ Based on Twitter Bootstrap
     </div>
 </div>
 
-<?php include_once("../ssi/global-footer.php");?>
-<?php include_once("../ssi/scripts.php");?>
+<?php include_once("../ssi/global-footer.php"); ?>
+
+<?php include_once("../ssi/scripts.php"); ?>
+
 </body>
 </html>

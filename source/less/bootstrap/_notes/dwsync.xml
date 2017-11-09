@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<dwsync>
+<file name="alerts.less" server="waws-prod-dm1-025.ftp.azurewebsites.windows.net" local="131541291790442243" remote="131547574200000000" Dst="1" />
+<file name="badges.less" server="waws-prod-dm1-025.ftp.azurewebsites.windows.net" local="131541291790598244" remote="131547574200000000" Dst="1" />
+<file name="breadcrumbs.less" server="waws-prod-dm1-025.ftp.azurewebsites.windows.net" local="131541291790598244" remote="131547574200000000" Dst="1" />
+<file name="buttons.less" server="waws-prod-dm1-025.ftp.azurewebsites.windows.net" local="131541291790598244" remote="131547574200000000" Dst="1" />
+<file name="carousel.less" server="waws-prod-dm1-025.ftp.azurewebsites.windows.net" local="131541291790598244" remote="131547574200000000" Dst="1" />
+<file name="button-groups.less" server="waws-prod-dm1-025.ftp.azurewebsites.windows.net" local="131541291790598244" remote="131547574200000000" Dst="1" />
+<file name="code.less" server="waws-prod-dm1-025.ftp.azurewebsites.windows.net" local="131541291790754245" remote="131547574200000000" Dst="1" />
+<file name="close.less" server="waws-prod-dm1-025.ftp.azurewebsites.windows.net" local="131541291790754245" remote="131547574200000000" Dst="1" />
+<file name="component-animations.less" server="waws-prod-dm1-025.ftp.azurewebsites.windows.net" local="131541291790754245" remote="131547574200000000" Dst="1" />
+<file name="forms.less" server="waws-prod-dm1-025.ftp.azurewebsites.windows.net" local="131541291790754245" remote="131547574200000000" Dst="1" />
+<file name="glyphicons.less" server="waws-prod-dm1-025.ftp.azurewebsites.windows.net" local="131541291790754245" remote="131547574200000000" Dst="1" />
+<file name="dropdowns.less" server="waws-prod-dm1-025.ftp.azurewebsites.windows.net" local="131541291790754245" remote="131547574200000000" Dst="1" />
+<file name="input-groups.less" server="waws-prod-dm1-025.ftp.azurewebsites.windows.net" local="131541291790754245" remote="131547574200000000" Dst="1" />
+<file name="jumbotron.less" server="waws-prod-dm1-025.ftp.azurewebsites.windows.net" local="131541291790754245" remote="131547574200000000" Dst="1" />
+<file name="grid.less" server="waws-prod-dm1-025.ftp.azurewebsites.windows.net" local="131541291790754245" remote="131547574200000000" Dst="1" />
+<file name="labels.less" server="waws-prod-dm1-025.ftp.azurewebsites.windows.net" local="131541291790754245" remote="131547574200000000" Dst="1" />
+<file name="list-group.less" server="waws-prod-dm1-025.ftp.azurewebsites.windows.net" local="131541291790754245" remote="131547574200000000" Dst="1" />
+<file name="media.less" server="waws-prod-dm1-025.ftp.azurewebsites.windows.net" local="131541291790910246" remote="131547574200000000" Dst="1" />
+<file name="navbar.less" server="waws-prod-dm1-025.ftp.azurewebsites.windows.net" local="131541291791690251" remote="131547574800000000" Dst="1" />
+<file name="mixins.less" server="waws-prod-dm1-025.ftp.azurewebsites.windows.net" local="131541291790910246" remote="131547574800000000" Dst="1" />
+<file name="modals.less" server="waws-prod-dm1-025.ftp.azurewebsites.windows.net" local="131541291791534250" remote="131547574800000000" Dst="1" />
+<file name="navs.less" server="waws-prod-dm1-025.ftp.azurewebsites.windows.net" local="131541291791690251" remote="131547574800000000" Dst="1" />
+<file name="normalize.less" server="waws-prod-dm1-025.ftp.azurewebsites.windows.net" local="131541291791690251" remote="131547574800000000" Dst="1" />
+<file name="pager.less" server="waws-prod-dm1-025.ftp.azurewebsites.windows.net" local="131541291791690251" remote="131547574800000000" Dst="1" />
+<file name="pagination.less" server="waws-prod-dm1-025.ftp.azurewebsites.windows.net" local="131541291791690251" remote="131547574800000000" Dst="1" />
+<file name="panels.less" server="waws-prod-dm1-025.ftp.azurewebsites.windows.net" local="131541291791690251" remote="131547574800000000" Dst="1" />
+<file name="popovers.less" server="waws-prod-dm1-025.ftp.azurewebsites.windows.net" local="131541291791690251" remote="131547574800000000" Dst="1" />
+<file name="responsive-embed.less" server="waws-prod-dm1-025.ftp.azurewebsites.windows.net" local="131541291791846252" remote="131547574800000000" Dst="1" />
+<file name="progress-bars.less" server="waws-prod-dm1-025.ftp.azurewebsites.windows.net" local="131541291791846252" remote="131547574800000000" Dst="1" />
+<file name="print.less" server="waws-prod-dm1-025.ftp.azurewebsites.windows.net" local="131541291791690251" remote="131547574800000000" Dst="1" />
+<file name="responsive-utilities.less" server="waws-prod-dm1-025.ftp.azurewebsites.windows.net" local="131541291791846252" remote="131547574800000000" Dst="1" />
+<file name="scaffolding.less" server="waws-prod-dm1-025.ftp.azurewebsites.windows.net" local="131541291791846252" remote="131547574800000000" Dst="1" />
+<file name="tables.less" server="waws-prod-dm1-025.ftp.azurewebsites.windows.net" local="131541291791846252" remote="131547574800000000" Dst="1" />
+<file name="tooltip.less" server="waws-prod-dm1-025.ftp.azurewebsites.windows.net" local="131541291791846252" remote="131547574800000000" Dst="1" />
+<file name="type.less" server="waws-prod-dm1-025.ftp.azurewebsites.windows.net" local="131541291791846252" remote="131547574800000000" Dst="1" />
+<file name="thumbnails.less" server="waws-prod-dm1-025.ftp.azurewebsites.windows.net" local="131541291791846252" remote="131547574800000000" Dst="1" />
+<file name="utilities.less" server="waws-prod-dm1-025.ftp.azurewebsites.windows.net" local="131541291792002253" remote="131547574800000000" Dst="1" />
+<file name="wells.less" server="waws-prod-dm1-025.ftp.azurewebsites.windows.net" local="131541291792002253" remote="131547574800000000" Dst="1" />
+<file name="_changelog.txt" server="waws-prod-dm1-025.ftp.azurewebsites.windows.net" local="131541291790442243" remote="131547574800000000" Dst="1" />
+</dwsync>

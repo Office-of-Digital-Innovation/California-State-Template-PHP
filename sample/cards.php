@@ -19,33 +19,46 @@ Based on Twitter Bootstrap
 <meta name="Description" content="State of California" />
 <meta name="Keywords" content="California, government" />
 
-<?php include_once("../ssi/head-css-js.php");?>
+<?php include_once("../ssi/head-css-js.php"); ?>
+
 </head>
 
 <body>
 
 <header role="banner" id="header" class="global-header">
-	<div id="skip-to-content"><a href="#main-content">Skip to Main Content</a></div>
+	<div id="skip-to-content"><a href="#main-content">Skip to Main Content</a></div>    
+        <!-- Location Bar -->        
+		<?php include_once("../ssi/location-bar.php"); ?>
+        
+        <!-- Include Utility Header -->
+		<?php include_once("../ssi/utility-header.php"); ?>	
+        
+        <!-- Settings Bar -->	
+		<?php include_once("../ssi/settings-bar.php"); ?>
+
+		<!-- Include Branding -->
+		<?php include_once("../ssi/branding.php"); ?>
     
-    <!-- Include Branding -->
-    <?php include_once("../ssi/branding.php");?>    
     <!-- Include Mobile Controls -->
-    <?php include_once("../ssi/mobile-controls.php");?>    
+    <?php include_once("../ssi/mobile-controls.php"); ?>
+    
     <div class="navigation-search">
         
         <div id="head-search" class="search-container">
             <!-- Include Search -->
-            <?php include_once("../ssi/search.php");?>        </div>
+            <?php include_once("../ssi/search.php"); ?>
+        </div>
         
         <!-- Include Navigation -->
-        <?php include_once("../ssi/navigation.php");?>    
+        <?php include_once("../ssi/navigation.php"); ?>
+    
     </div>
     
 	<div class="header-decoration"></div>
 </header>
 
 <div id="main-content" class="main-content">
-    <div class="wrapper">
+    <div class="section">
         <main class="main-primary">
             <ol class="breadcrumb">
                 <li><a href="../index.php">Home</a></li>
@@ -58,10 +71,11 @@ Based on Twitter Bootstrap
                      <p>A card is a flexible and extensible content container. It includes options for headers and footers, a wide variety of content, contextual background colors, and powerful display options.</p>
                      <p>Cards require a small amount of markup and classes to provide you with as much control as possible. These classes and markup are flexible though and can typically be remixed and extended with ease. For example, if your card has no flush content like images, feel free to put the <code>.card-block</code> class on the <code>.card element</code> to consolidate your markup.</p>
                      <h2>Example:</h2>
-                     <?php include("../sample/modules/card.php");?>                </div>
+                     <?php include("../sample/modules/card.php"); ?>
+                </div>
                  <div class="half">
                     <h2><label for="sample-card">Source Code:</label></h2>
-                    <textarea id="sample-card" class="form-control" rows="10" cols="80"><?php include("../sample/modules/card.php");?></textarea>
+                    <textarea id="sample-card" class="form-control" rows="10" cols="80"><?php include("../sample/modules/card.php"); ?></textarea>
                 </div> 
             </div>
             
@@ -81,10 +95,11 @@ Based on Twitter Bootstrap
                     <li><code>.card-inverted</code></li>
                 </ul>
                 <h3>Example using <code>.card-primary</code></h3>
-                <?php include_once("../sample/modules/card-primary.php");?>                </div>
+                <?php include("../sample/modules/card-primary.php"); ?>
+                </div>
                 <div class="half">
                     <h2><label for="sample-primary">Source Code:</label></h2>
-                    <textarea id="sample-primary" class="form-control" rows="10" cols="80"><?php include_once("../sample/modules/card-primary.php");?></textarea>
+                    <textarea id="sample-primary" class="form-control" rows="10" cols="80"><?php include("../sample/modules/card-primary.php"); ?></textarea>
                 </div>
             </div>
             
@@ -93,10 +108,11 @@ Based on Twitter Bootstrap
             <div class="group">
                 <div class="half">
                 <h2>Card with Header:</h2>
-                <?php include_once("../sample/modules/card-header.php");?>                </div>
+                <?php include("../sample/modules/card-header.php"); ?>
+                </div>
                 <div class="half">
                     <h2><label for="sample-header">Source Code:</label></h2>
-                    <textarea id="sample-header" class="form-control" rows="10" cols="80"><?php include("../sample/modules/card-header.php");?></textarea>
+                    <textarea id="sample-header" class="form-control" rows="10" cols="80"><?php include("../sample/modules/card-header.php"); ?></textarea>
                 </div>
             </div>
             
@@ -105,10 +121,11 @@ Based on Twitter Bootstrap
             <div class="group">
                 <div class="half">
                 <h2>Card with footer:</h2>
-                <?php include_once("../sample/modules/card-footer.php");?>                </div>
+                <?php include("../sample/modules/card-footer.php"); ?>
+                </div>
                 <div class="half">
                     <h2><label for="sample-footer">Source Code:</label></h2>
-                    <textarea id="sample-footer" class="form-control" rows="10" cols="80"><?php include_once("../sample/modules/card-footer.php");?></textarea>
+                    <textarea id="sample-footer" class="form-control" rows="10" cols="80"><?php include("../sample/modules/card-footer.php"); ?></textarea>
                 </div>
             </div>
             
@@ -116,7 +133,9 @@ Based on Twitter Bootstrap
     </div>
 </div>
 
-<?php include_once("../ssi/global-footer.php");?>
-<?php include_once("../ssi/scripts.php");?>
+<?php include_once("../ssi/global-footer.php"); ?>
+
+<?php include_once("../ssi/scripts.php"); ?>
+
 </body>
 </html>

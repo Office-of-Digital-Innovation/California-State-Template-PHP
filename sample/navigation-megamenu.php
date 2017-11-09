@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
 <!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
 <!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
@@ -19,7 +19,8 @@ Based on Twitter Bootstrap
 <meta name="Description" content="State of California" />
 <meta name="Keywords" content="California, government" />
 
-<?php include_once("../ssi/head-css-js.php");?>
+<?php include_once("../ssi/head-css-js.php"); ?>
+
 </head>
 
 <body class="two-column">
@@ -27,27 +28,29 @@ Based on Twitter Bootstrap
 <header role="banner" id="header" class="global-header fixed">
     <div id="skip-to-content"><a href="#main-content">Skip to Main Content</a></div>
 
-    <!-- Settings Bar -->
-    <?php include_once("../ssi/settings-bar.php");?>
-    <!-- Alert Banner -->
-    <?php include_once("../ssi/alert-banner.php");?>
     <!-- Include Utility Header -->
-    <?php include_once("../ssi/utility-header.php");?>
-    <!-- Include Branding -->
-    <?php include_once("../ssi/branding.php");?>
+    <?php include_once("../ssi/utility-header.php"); ?>		<!-- Settings Bar -->	
+		<?php include_once("../ssi/settings-bar.php"); ?>
+
+		<!-- Include Branding -->
+		<?php include_once("../ssi/branding.php"); ?>
+
     <!-- Include Mobile Controls -->
-    <?php include_once("../ssi/mobile-controls.php");?>
+    <?php include_once("../ssi/mobile-controls.php"); ?>
+
     <div class="navigation-search">
         <div id="head-search" class="search-container">
             <!-- Include Search -->
-            <?php include_once("../ssi/search.php");?>        </div>
+            <?php include_once("../ssi/search.php"); ?>
+        </div>
         <!-- Include Navigation -->
-        <?php include_once("../ssi/navigation.php");?>    </div>
+        <?php include("../sample/modules/nav-megamenu.php"); ?>
+    </div>
     <div class="header-decoration"></div>
 </header>
 
 <div id="main-content" class="main-content">
-    <div class="wrapper">
+    <div class="section">
         <main class="main-primary">
             <ol class="breadcrumb">
                 <li><a href="../index.php">Home</a></li>
@@ -101,26 +104,27 @@ Based on Twitter Bootstrap
 &lt;/div&gt;
 </pre>     
 
-                   
+          
             
-            
-            
-            <!-- <h2>Navigation Samples</h2>
+<h2>More Navigation Samples</h2>
             <ul>
-            	<li><a href="navigation-megamenu.php">Megamenu Navigation</a></li>
-                <li><a href="navigation-dropdown.php">Dropdown Navigation</a></li>
                 <li><a href="navigation-single.php">Single Level Navigation</a></li>
-                <li><a href="navigation-standard-mobile.php">Non-off-canvas Mobile Navigation</a></li>
-            </ul> -->
-        </main>
+                <li><a href="navigation-dropdown.php">Dropdown Navigation</a></li>
+                <li><a href="navigation-megamenu-original.php">State Template v4 Original Megamenu</a></li>
+            </ul>
+
+</main>
         
         <div class="main-secondary">
-            <?php include_once("../sample/modules/profile-banners.php");?>        </div>
+            <?php include("../sample/modules/profile-banners.php"); ?>
+        </div>
     </div>
 </div>
 
 
-<?php include_once("../ssi/global-footer.php");?>
-<?php include_once("../ssi/scripts.php");?>
+<?php include_once("../ssi/global-footer.php"); ?>
+
+<?php include_once("../ssi/scripts.php"); ?>
+
 </body>
 </html>

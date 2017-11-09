@@ -19,26 +19,39 @@ Based on Twitter Bootstrap
 <meta name="Description" content="State of California" />
 <meta name="Keywords" content="California, government" />
 
-<?php include_once("../ssi/head-css-js.php");?>
+<?php include_once("../ssi/head-css-js.php"); ?>
+
 </head>
 
 <body>
 
 <header role="banner" id="header" class="global-header">
-	<div id="skip-to-content"><a href="#main-content">Skip to Main Content</a></div>
+	<div id="skip-to-content"><a href="#main-content">Skip to Main Content</a></div>    
+        <!-- Location Bar -->        
+		<?php include_once("../ssi/location-bar.php"); ?>
+        
+        <!-- Include Utility Header -->
+		<?php include_once("../ssi/utility-header.php"); ?>	
+        
+        <!-- Settings Bar -->	
+		<?php include_once("../ssi/settings-bar.php"); ?>
+
+		<!-- Include Branding -->
+		<?php include_once("../ssi/branding.php"); ?>
     
-    <!-- Include Branding -->
-    <?php include_once("../ssi/branding.php");?>    
     <!-- Include Mobile Controls -->
-    <?php include_once("../ssi/mobile-controls.php");?>    
+    <?php include_once("../ssi/mobile-controls.php"); ?>
+    
     <div class="navigation-search">
         
         <div id="head-search" class="search-container">
             <!-- Include Search -->
-            <?php include_once("../ssi/search.php");?>        </div>
+            <?php include_once("../ssi/search.php"); ?>
+        </div>
         
         <!-- Include Navigation -->
-        <?php include_once("../ssi/navigation.php");?>    
+        <?php include_once("../ssi/navigation.php"); ?>
+    
     </div>
     
 	<div class="header-decoration"></div>
@@ -46,7 +59,7 @@ Based on Twitter Bootstrap
 
 
 <div id="main-content" class="main-content">
-    <div class="wrapper">
+    <div class="section">
         <main class="main-primary">
             <ol class="breadcrumb">
                 <li><a href="../index.php">Home</a></li>
@@ -62,10 +75,11 @@ Based on Twitter Bootstrap
             <div class="group">
                 <div class="half">
                     <h2>Image Left Aligned:</h2>
-                    <?php include("../sample/modules/testimonial-default.php");?>                </div>
+                    <?php include("../sample/modules/testimonial-default.php"); ?>
+                </div>
                  <div class="half">
                     <h2><label for="sample-accordion">Source Code:</label></h2>
-                    <textarea id="sample-accordion" class="form-control" rows="10" cols="80"><?php include("../sample/modules/testimonial-default.php");?></textarea>
+                    <textarea id="sample-accordion" class="form-control" rows="10" cols="80"><?php include("../sample/modules/testimonial-default.php"); ?></textarea>
                 </div> 
             </div>
             
@@ -74,11 +88,12 @@ Based on Twitter Bootstrap
             <div class="group">
                 <div class="half">
                     <h2>Thumnail Right Aligned:</h2>
-                    <?php include("../sample/modules/testimonial-danger.php");?>                    <p class="text-warning">Note: The source order for <code>.thumbnail</code> and <code>.testimonial-body</code> have been reversed. Source order is important when using this component with this configuration.</p>
+                    <?php include("../sample/modules/testimonial-danger.php"); ?>
+                    <p class="text-warning">Note: The source order for <code>.thumbnail</code> and <code>.testimonial-body</code> have been reversed. Source order is important when using this component with this configuration.</p>
                 </div>
                  <div class="half">
                     <h2><label for="testimonial-danger">Source Code:</label></h2>
-                    <textarea id="testimonial-danger" class="form-control" rows="10" cols="80"><?php include("../sample/modules/testimonial-danger.php");?></textarea>
+                    <textarea id="testimonial-danger" class="form-control" rows="10" cols="80"><?php include("../sample/modules/testimonial-danger.php"); ?></textarea>
                 </div> 
             </div>
             
@@ -87,10 +102,11 @@ Based on Twitter Bootstrap
             <div class="group">
                 <div class="half">
                     <h2>Thumbnail Bottom Aligned:</h2>
-                    <?php include("../sample/modules/testimonial-standout.php");?>                </div>
+                    <?php include("../sample/modules/testimonial-standout.php"); ?>
+                </div>
                  <div class="half">
                     <h2><label for="testimonial-standout">Source Code:</label></h2>
-                    <textarea id="testimonial-standout" class="form-control" rows="10" cols="80"><?php include("../sample/modules/testimonial-standout.php");?></textarea>
+                    <textarea id="testimonial-standout" class="form-control" rows="10" cols="80"><?php include("../sample/modules/testimonial-standout.php"); ?></textarea>
                 </div> 
             </div>
             
@@ -99,10 +115,11 @@ Based on Twitter Bootstrap
             <div class="group">
                 <div class="half">
                     <h2>Thumbnail Top:</h2>
-                    <?php include("../sample/modules/testimonial-top.php");?>                </div>
+                    <?php include("../sample/modules/testimonial-top.php"); ?>
+                </div>
                  <div class="half">
                     <h2><label for="testimonial-stacked">Source Code:</label></h2>
-                    <textarea id="testimonial-stacked" class="form-control" rows="10" cols="80"><?php include("../sample/modules/testimonial-top.php");?></textarea>
+                    <textarea id="testimonial-stacked" class="form-control" rows="10" cols="80"><?php include("../sample/modules/testimonial-top.php"); ?></textarea>
                 </div> 
             </div>
         </main>
@@ -110,7 +127,9 @@ Based on Twitter Bootstrap
 </div>
 
 
-<?php include_once("../ssi/global-footer.php");?>
-<?php include_once("../ssi/scripts.php");?>
+<?php include_once("../ssi/global-footer.php"); ?>
+
+<?php include_once("../ssi/scripts.php"); ?>
+
 </body>
 </html>

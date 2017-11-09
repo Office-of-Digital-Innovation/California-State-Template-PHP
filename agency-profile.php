@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
 <!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
 <!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
@@ -22,9 +22,7 @@ Based on Twitter Bootstrap
   <meta name="Description" content="State of California" />
   <meta name="Keywords" content="California, government" />
 
-    <?php
-	include_once("ssi/head-css-js.php");
-	?>
+  <?php include_once("ssi/head-css-js.php"); ?>
 
 </head>
 
@@ -36,50 +34,30 @@ Based on Twitter Bootstrap
     <div id="skip-to-content"><a href="#main-content">Skip to Main Content</a></div>
     
     <!-- Location Bar -->
-    <?php
-	include_once("ssi/location-bar.php");
-	?>
-    
-    <!-- Settings Bar -->
-    <?php
-	include_once("ssi/settings-bar.php");
-	?>
-	
-    
-    <!-- Alert Banner -->
-    <?php
-	include_once("ssi/alert-banner.php");
-	?>
+    <?php include_once("ssi/location-bar.php"); ?>
 
     <!-- Include Utility Header -->
-    <?php
-	include_once("ssi/utility-header.php");
-	?>
+    <?php include_once("ssi/utility-header.php"); ?>
+  
+    <!-- Settings Bar -->
+    <?php include_once("ssi/settings-bar.php"); ?>
 
     <!-- Include Branding -->
-    <?php
-	include_once("ssi/branding.php");
-	?>
+    <?php include_once("ssi/branding.php"); ?>
 
     <!-- Include Mobile Controls -->
-    <?php
-	include_once("ssi/mobile-controls.php");
-	?>
+    <?php include_once("ssi/mobile-controls.php"); ?>
 
     <div class="navigation-search">
 
       <div id="head-search" class="search-container">
         <!-- Include Search -->
-    <?php
-	include_once("ssi/search.php");
-	?>
+        <?php include_once("ssi/search.php"); ?>
       </div>
 
 
       <!-- Include Navigation -->
-          <?php
-	       include_once("ssi/navigation.php");
-	      ?>
+      <?php include_once("ssi/navigation.php"); ?>
 
 
 
@@ -147,9 +125,7 @@ Based on Twitter Bootstrap
             </div>
             <!-- End Section -->
             
-			    <?php
-				include_once("ssi/section-service-group.php");
-				?>
+            <?php include("ssi/section-service-group.php"); ?>
             
             <div class="section" id="locations-near-you">
                 <div class="container">
@@ -187,38 +163,27 @@ Based on Twitter Bootstrap
             
             <div class="section section-understated">
                 <div class="container">
-                <?php
-				include_once("ssi/section-service-advertisement.php");
-				?>
+                    <?php include("ssi/section-service-advertisement.php"); ?>
                 </div>
             </div>
             <!-- End Section -->
-                <?php
-				include_once("ssi/section-data-visualizations.php");
-				?>    
+                
+            <?php include("ssi/section-data-visualizations.php"); ?>
             <!-- End Section -->
             
             <div class="section section-default">
                 <div class="container">
                     <h2>Frequently Asked Questions</h2>
-					<?php
-					include_once("ssi/section-service-faq.php");
-					?>
-					
+                    <?php include("ssi/section-service-faq.php"); ?>
                 </div>
             </div>
             <!-- End Section -->
         </main>
     </div>
 
-  	<?php
-		include_once("ssi/global-footer.php");
-	?>
-	
+  <?php include_once("ssi/global-footer.php"); ?>
 
-	<?php
-		include_once("ssi/scripts.php");
-	?>
+  <?php include_once("ssi/scripts.php"); ?>
   
 <script src="/js/libs/mapthat_script.js"></script>
 

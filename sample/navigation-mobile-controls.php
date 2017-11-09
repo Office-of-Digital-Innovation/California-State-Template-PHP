@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
 <!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
 <!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
@@ -19,33 +19,46 @@ Based on Twitter Bootstrap
 <meta name="Description" content="State of California" />
 <meta name="Keywords" content="California, government" />
 
-<?php include_once("../ssi/head-css-js.php");?>
+<?php include_once("../ssi/head-css-js.php"); ?>
+
 </head>
 
 <body class="primary two-column">
 
 <header role="banner" id="header" class="global-header">
-	<div id="skip-to-content"><a href="#main-content">Skip to Main Content</a></div>
+	<div id="skip-to-content"><a href="#main-content">Skip to Main Content</a></div>    
+        <!-- Location Bar -->        
+		<?php include_once("../ssi/location-bar.php"); ?>
+        
+        <!-- Include Utility Header -->
+		<?php include_once("../ssi/utility-header.php"); ?>	
+        
+        <!-- Settings Bar -->	
+		<?php include_once("../ssi/settings-bar.php"); ?>
+
+		<!-- Include Branding -->
+		<?php include_once("../ssi/branding.php"); ?>
     
-    <!-- Include Branding -->
-    <?php include_once("../ssi/branding.php");?>    
     <!-- Include Mobile Controls -->
-    <?php include_once("../sample/modules/mobile-controls-sample.php");?>    
+    <?php include("../sample/modules/mobile-controls-sample.php"); ?>
+    
     <div class="navigation-search">
         
-        <div id="head-search" class="search-container featured-search">
+        <div id="head-search" class="search-container">
             <!-- Include Search -->
-            <?php include_once("../ssi/search.php");?>        </div>
+            <?php include_once("../ssi/search.php"); ?>
+        </div>
         
         <!-- Include Navigation -->
-        <?php include_once("../sample/modules/nav-megamenu.php");?>    
+        <?php include("../sample/modules/nav-megamenu-mobile-icons.php"); ?>
+    
     </div>
     
 	<div class="header-decoration"></div>
 </header>
 
 <div id="main-content" class="main-content">
-    <div class="wrapper">
+    <div class="section">
         <main class="main-primary">
             <ol class="breadcrumb">
                 <li><a href="../index.php">Home</a></li>
@@ -55,7 +68,7 @@ Based on Twitter Bootstrap
             
         	<h1>Mobile Navigation Icon Links</h1>
             <p>The off-canvas mobile navigation menu has two areas for additional link icons: the <strong>mobile header</strong> icons and the <strong>mobile menu</strong> icons.</p> 
-            <p>The <strong>mobile header</strong> icons are located on the top right portion of the page header when viewed on a mobile device. (See <a class="gallery-item" href="images/mobile-header-icons-area.jpg" data-gallery="gallery-small">Figure 1</a>). Alternativly, the <strong>mobile menu</strong> icons are located in the top right portion of the expanded menu when viewed on a mobile device (See <a class="gallery-item" href="images/mobile-menu-icons-area.jpg" data-gallery="gallery-small">figure 2</a>).</p>
+            <p>The <strong>mobile header</strong> icons are located on the top right portion of the page header when viewed on a mobile device. (See <a class="gallery-item" href="images/mobile-header-icons-area.jpg" data-gallery="gallery-small">Figure 1</a>). Alternatively, the <strong>mobile menu</strong> icons are located in the top right portion of the expanded menu when viewed on a mobile device (See <a class="gallery-item" href="images/mobile-menu-icons-area.jpg" data-gallery="gallery-small">figure 2</a>).</p>
             
             <p>Modifications to the mobile icons are done in the <code>/ssi/mobile-controls.php</code> file. <strong>NOTE:</strong> To maintain accessibility compliance, use the following format when adding new icons:</p>
             
@@ -67,7 +80,7 @@ Based on Twitter Bootstrap
             <p>The second part is the label for the icon. In the example, the label is "Contact", you should replace it with a short but meaningful label. Note that the label is inside a span with a class of <code>.sr-only</code>. This is a special class that visually hides the label, while allowing screen readers to announces it.</p>
 			
             <h2><label for="mobile-control-icons">Source Code:</label></h2>
-            <textarea id="mobile-control-icons" class="form-control" rows="10" cols="80"><?php include_once("../sample/modules/mobile-controls-sample.php");?></textarea>
+            <textarea id="mobile-control-icons" class="form-control" rows="10" cols="80"><?php include("../sample/modules/mobile-controls-sample.php"); ?></textarea>
             
             <h2>Location of Icon Areas</h2>
             <div class="gallery gallery-small">
@@ -77,12 +90,15 @@ Based on Twitter Bootstrap
         </main>
         
         <div class="main-secondary">
-            <?php include_once("../sample/modules/profile-banners.php");?>        </div>
+            <?php include("../sample/modules/profile-banners.php"); ?>
+        </div>
     </div>
 </div>
 
 
-<?php include_once("../ssi/global-footer.php");?>
-<?php include_once("../ssi/scripts.php");?>
+<?php include_once("../ssi/global-footer.php"); ?>
+
+<?php include_once("../ssi/scripts.php"); ?>
+
 </body>
 </html>

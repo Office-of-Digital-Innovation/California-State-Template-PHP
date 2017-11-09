@@ -19,41 +19,47 @@ Based on Twitter Bootstrap
 <meta name="Description" content="State of California" />
 <meta name="Keywords" content="California, government" />
 
-<?php include_once("../ssi/head-css-js.php");?>
+<?php include_once("../ssi/head-css-js.php"); ?>
+
 </head>
 
-<body class="primary two-column">
+<body>
 
 <header role="banner" id="header" class="global-header">
   <div id="skip-to-content"><a href="#main-content">Skip to Main Content</a></div>
 
     <!-- Include Branding -->
-    <?php include_once("../ssi/branding.php");?>
+    <?php include_once("../ssi/branding.php"); ?>
+
     <!-- Include Mobile Controls -->
-    <?php include_once("../ssi/mobile-controls.php");?>
+    <?php include_once("../ssi/mobile-controls.php"); ?>
+
     <div class="navigation-search">
 
-        <div id="head-search" class="search-container featured-search">
+        <div id="head-search" class="search-container">
             <!-- Include Search -->
-            <?php include_once("../ssi/search.php");?>        </div>
+            <?php include_once("../ssi/search.php"); ?>
+        </div>
 
         <!-- Include Navigation -->
-        <?php include_once("../ssi/navigation.php");?>
+        <?php include_once("../ssi/navigation.php"); ?>
+
     </div>
 
         <!-- Step 5: Header Images -->
         <!-- Include for optional slideshow banner -->
-        <?php include_once("../ssi/header-single-banner.php");?>
+
+
   <div class="header-decoration"></div>
 </header>
 
 <div id="main-content" class="main-content">
-    <div class="wrapper">
+    <div class="section">
         <main class="main-primary">
             <ol class="breadcrumb">
                 <li><a href="../index.php">Home</a></li>
                 <li><a href="index.php">Examples</a></li>
-                <li class="active">Megamenu</li>
+                <li class="active">Active Navigation Item</li>
             </ol>
 
           <h1>Active Navigation Item</h1>
@@ -65,31 +71,27 @@ Based on Twitter Bootstrap
             <p>The active link in the main navigation can be set manually on a page by page basis by adding a bit of javascript that overrides the <code>defaultActiveLink</code> variable.</p>
             <p>Add the following snippet of javascript to the <code>head</code> of the page. When this variable is present, it will override the automatic setting described above.</p>
 
-            <!-- DEMO: Change the active link to "Services" -->
-            <script type="text/javascript">
-        var defaultActiveLink = "Services";
-      </script>
-            <!-- End Demo -->
+     
 
-            <h5>Example:</h5>
+            <h5><strong>Example:</strong></h5>
 
 <pre>
 &lt;script type="text/javascript"&gt;
-  var defaultActiveLink = "Services";
+  var defaultActiveLink = "Examples";
 &lt;/script&gt;
 </pre>
       <p><span class="label label-info">NOTE:</span> This example finds the link with the text "Services" and set it as the active item (as seen on this page). </p>
 
-
         </main>
 
-        <div class="main-secondary">
-            <?php include_once("../sample/modules/profile-banners.php");?>        </div>
+       
     </div>
 </div>
 
 
-<?php include_once("../ssi/global-footer.php");?>
-<?php include_once("../ssi/scripts.php");?>
+<?php include_once("../ssi/global-footer.php"); ?>
+
+<?php include_once("../ssi/scripts.php"); ?>
+
 </body>
 </html>

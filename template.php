@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
 <!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
 <!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
@@ -20,9 +20,7 @@ Based on Twitter Bootstrap
 <meta name="Description" content="State of California" />
 <meta name="Keywords" content="California, government" />
 <!-- InstanceEndEditable -->
-			<?php
-			include_once("ssi/head-css-js.php");
-			?>
+<?php include_once("ssi/head-css-js.php"); ?>
 <!-- InstanceBeginEditable name="head" -->
 <!-- InstanceEndEditable -->
 <!-- InstanceParam name="OptionalSlideshow" type="boolean" value="true" -->
@@ -35,43 +33,34 @@ Based on Twitter Bootstrap
 	<div id="skip-to-content"><a href="#main-content">Skip to Main Content</a></div>
     
     <!-- Include Branding -->
-	<?php
-			include_once("ssi/branding.php");
-			?>
+    <?php include_once("ssi/branding.php"); ?>
     
     <!-- Include Mobile Controls -->
-	<?php
-			include_once("ssi/mobile-controls.php");
-			?>
+    <?php include_once("ssi/mobile-controls.php"); ?>
     
     <div class="navigation-search">
         
         <div id="head-search" class="search-container">
             <!-- Include Search -->
-            <?php
-			include_once("ssi/search.php");
-			?>
+            <?php include_once("ssi/search.php"); ?>
         </div>
         
         <!-- Include Navigation -->
-        <?php
-			include_once("ssi/navigation.php");
-			?>
+        <?php include_once("ssi/navigation.php"); ?>
     
     </div>
 	
     <!-- Step 5: Header Images -->
     <!-- Include for optional slideshow banner -->
-		<?php
-			include_once("ssi/header-slideshow-banner.php");
-			?>
+    
+    <?php include("ssi/header-slideshow-banner.php"); ?>
     
     <div class="header-decoration"></div>
 </header>
 
 
 <div id="main-content" class="main-content">
-    <div class="wrapper">
+    <div class="section">
         <main class="main-primary">
         <!-- InstanceBeginEditable name="MainContent" -->
             <article>
@@ -104,12 +93,10 @@ Based on Twitter Bootstrap
     </div>
 </div>
 
-<?php
-			include_once("ssi/global-footer.php");
-			?>
-<?php
-			include_once("ssi/scripts.php");
-			?>
+
+<?php include_once("ssi/global-footer.php"); ?>
+
+<?php include_once("ssi/scripts.php"); ?>
 
 </body>
 <!-- InstanceEnd --></html>

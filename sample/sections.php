@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
 <!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
 <!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
@@ -19,23 +19,37 @@ Based on Twitter Bootstrap
 <meta name="Description" content="State of California" />
 <meta name="Keywords" content="California, government" />
 
-<?php include_once("../ssi/head-css-js.php");?>
+<?php include_once("../ssi/head-css-js.php"); ?>
+
 </head>
 
 <body>
 
 <header role="banner" id="header" class="global-header">
-  <div id="skip-to-content"><a href="#main-content">Skip to Main Content</a></div>
-    <!-- Include Branding -->
-    <?php include_once("../ssi/branding.php");?>
+  <div id="skip-to-content"><a href="#main-content">Skip to Main Content</a></div>    
+        <!-- Location Bar -->        
+		<?php include_once("../ssi/location-bar.php"); ?>
+        
+        <!-- Include Utility Header -->
+		<?php include_once("../ssi/utility-header.php"); ?>	
+        
+        <!-- Settings Bar -->	
+		<?php include_once("../ssi/settings-bar.php"); ?>
+
+		<!-- Include Branding -->
+		<?php include_once("../ssi/branding.php"); ?>
+
     <!-- Include Mobile Controls -->
-    <?php include_once("../ssi/mobile-controls.php");?>    <div class="navigation-search">
+    <?php include_once("../ssi/mobile-controls.php"); ?>
+    <div class="navigation-search">
         <div id="head-search" class="search-container internal">
             <!-- Include Search -->
-            <?php include_once("../ssi/search.php");?>        </div>
+            <?php include_once("../ssi/search.php"); ?>
+        </div>
 
         <!-- Include Navigation -->
-        <?php include_once("../ssi/navigation.php");?>    </div>
+        <?php include_once("../ssi/navigation.php"); ?>
+    </div>
   <div class="header-decoration"></div>
 </header>
 
@@ -66,8 +80,8 @@ Based on Twitter Bootstrap
                         <pre>
 &lt;script&gt;
 $(document).ready(function() {
-    // Backward compatability fix for removing wrapper on new &quot;sections&quot;
-    $(&#39;.main-primary &gt; .section&#39;).closest(&#39;div.wrapper&#39;).removeClass(&#39;wrapper&#39;);
+    // Backward compatability fix swapping deprecated wrapper with new sections classe
+    $(&#39;.main-primary &#39;).closest(&#39;div.wrapper&#39;).removeClass(&#39;wrapper&#39;).addClass(&#39;section&#39;);
 });
 &lt;/script&gt;
                         </pre>
@@ -77,11 +91,8 @@ $(document).ready(function() {
                         <ul>
                             <li><code>.section-default</code></li>
                             <li><code>.section-understated</code></li>
-                            <li><code>.section-overstated</code></li>
-                            <li><code>.section-standout</code></li>
-                            <li><code>.section-impact</code></li>
                             <li><code>.section-primary</code></li>
-                            <li><code>.section-danger</code></li>
+                            <li><code>.section-standout</code></li>
                             <li><code>.section-inverted</code></li>
                             <li><code>.collapsed</code> (can be applied in tandom with all the above to remove the top and bottom padding)</li>
                         </ul>
@@ -91,7 +102,7 @@ $(document).ready(function() {
                     </div>
                     <div class="third">
                         <h2><label for="sample">Source Code:</label></h2>
-                        <textarea id="sample" class="form-control" rows="10" cols="80"><?php include("../sample/modules/section-default.php");?></textarea>
+                        <textarea id="sample" class="form-control" rows="10" cols="80"><?php include("../sample/modules/section-default.php"); ?></textarea>
                     </div>
                 </div>
 
@@ -114,73 +125,16 @@ $(document).ready(function() {
                 <div class="group">
                     <div class="half">
                         <h2>Section Default</h2>
-                        <?php include("../sample/modules/section-content-test.php");?>                    </div>
+                        <?php include("../sample/modules/section-content-test.php"); ?>
+                    </div>
                     <div class="half">
                         <h2><label for="sample-default">Source Code:</label></h2>
-                        <textarea id="sample-default" class="form-control" rows="6" cols="80"><?php include("../sample/modules/section-default.php");?></textarea>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- SECTION UNDERSTATED -->
-        <div class="section section-understated">
-            <div class="container">
-                <div class="group">
-                    <div class="half">
-                        <h2>Section Understated</h2>
-                        <?php include("../sample/modules/section-content-test.php");?>                    </div>
-                    <div class="half">
-                        <h2><label for="sample-understated">Source Code:</label></h2>
-                        <textarea id="sample-understated" class="form-control" rows="6" cols="80"><?php include("../sample/modules/section-understated.php");?></textarea>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- SECTION OVERRSTATED -->
-        <div class="section section-overstated">
-            <div class="container">
-                <div class="group">
-                    <div class="half">
-                        <h2>Section Overstated</h2>
-                        <?php include("../sample/modules/section-content-test.php");?>                    </div>
-                    <div class="half">
-                        <h2><label for="sample-overstated">Source Code:</label></h2>
-                        <textarea id="sample-overstated" class="form-control" rows="6" cols="80"><?php include("../sample/modules/section-overstated.php");?></textarea>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- SECTION STANDOUT -->
-        <div class="section section-standout">
-            <div class="container">
-                <div class="group">
-                    <div class="half">
-                        <h2>Section Standout</h2>
-                        <?php include("../sample/modules/section-content-test.php");?>                    </div>
-                    <div class="half">
-                        <h2><label for="sample-standout">Source Code:</label></h2>
-                        <textarea id="sample-standout" class="form-control" rows="6" cols="80"><?php include("../sample/modules/section-standout.php");?></textarea>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-        <!-- PARALLAX BACKGROUND -->
-        <div class="section">
-            <div class="parallax-bg" style="background-image:url(images/background_1.jpg)"></div>
-            <div class="container">
-                <div class="group">
-                    <div class="half">
-                        <h2>Parallax Background</h2>
-                        <p>A parallax effect is a popular effect where the background appears to scroll at a sligtly slower speed than the foreground. To achieve this effect place a div inside <code>.section</code> just before the <code>.container</code> Depending on the amount of content (height of the section) some background images may look better than others. You may need a taller image for long sections. <em>The recommended approach is to use parallax sections only for short content areas.</em></p>
-                    </div>
-                    <div class="half">
-                        <h2><label for="sample-parallax">Source Code:</label></h2>
-                        <textarea id="sample-parallax" class="form-control" rows="7" cols="80"><?php include("../sample/modules/section-parallax.php");?></textarea>
+                        <textarea id="sample-default" class="form-control" rows="6" cols="80"><?php include("../sample/modules/section-default.php"); ?></textarea>
+                        <hr>
+                        <h3>Panels</h3>
+                        <?php include("../sample/modules/panels.php"); ?>
+                        <?php include("../sample/modules/images.php"); ?>
+                    
                     </div>
                 </div>
             </div>
@@ -193,43 +147,83 @@ $(document).ready(function() {
                 <div class="group">
                     <div class="half">
                         <h2>Section Primary</h2>
-                        <?php include("../sample/modules/section-content-test.php");?>                    </div>
+                        <?php include("../sample/modules/section-content-test.php"); ?>
+                    </div>
                     <div class="half">
                         <h2><label for="sample-primary">Source Code:</label></h2>
-                        <textarea id="sample-primary" class="form-control" rows="6" cols="80"><?php include("../sample/modules/section-primary.php");?></textarea>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- SECTION IMPACT -->
-        <div class="section section-impact">
-            <div class="container">
-                <div class="group">
-                    <div class="half">
-                        <h2>Section Impact</h2>
-                        <?php include("../sample/modules/section-content-test.php");?>                    </div>
-                    <div class="half">
-                        <h2><label for="sample-impact">Source Code:</label></h2>
-                        <textarea id="sample-standout" class="form-control" rows="6" cols="80"><?php include("../sample/modules/section-impact.php");?></textarea>
+                        <textarea id="sample-primary" class="form-control" rows="6" cols="80"><?php include("../sample/modules/section-primary.php"); ?></textarea>
+                        <hr>
+                        <h3>Panels</h3>
+                        <?php include("../sample/modules/panels.php"); ?>
+                        <?php include("../sample/modules/images.php"); ?>
+                       
+                    
                     </div>
                 </div>
             </div>
         </div>
 
-        <!-- SECTION DANGER -->
-        <div class="section section-danger">
+
+        <!-- SECTION STANDOUT -->
+        <div class="section section-standout">
             <div class="container">
                 <div class="group">
                     <div class="half">
-                        <h2>Section Danger</h2>
-                        <?php include("../sample/modules/section-content-test.php");?>                    </div>
+                        <h2>Section Standout</h2>
+                        <?php include("../sample/modules/section-content-test.php"); ?>
+                    </div>
                     <div class="half">
-                        <h2><label for="sample-danger">Source Code:</label></h2>
-                        <textarea id="sample-danger" class="form-control" rows="6" cols="80"><?php include("../sample/modules/section-danger.php");?></textarea>
+                        <h2><label for="sample-standout">Source Code:</label></h2>
+                        <textarea id="sample-standout" class="form-control" rows="6" cols="80"><?php include("../sample/modules/section-standout.php"); ?></textarea>
+                        <hr>
+                        <h3>Panels</h3>
+                        <?php include("../sample/modules/panels.php"); ?>
+                        <?php include("../sample/modules/images.php"); ?>
+                    
                     </div>
                 </div>
             </div>
         </div>
+
+
+        <!-- SECTION UNDERSTATED -->
+        <div class="section section-understated">
+            <div class="container">
+                <div class="group">
+                    <div class="half">
+                        <h2>Section Understated</h2>
+                        <?php include("../sample/modules/section-content-test.php"); ?>
+                    </div>
+                    <div class="half">
+                        <h2><label for="sample-understated">Source Code:</label></h2>
+                        <textarea id="sample-understated" class="form-control" rows="6" cols="80"><?php include("../sample/modules/section-understated.php"); ?></textarea>
+                        <hr>
+                        <h3>Panels</h3>
+                        <?php include("../sample/modules/panels.php"); ?>
+                        <?php include("../sample/modules/images.php"); ?>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- PARALLAX BACKGROUND -->
+        <div class="section section-standout">
+            <div class="parallax-bg" style="background-image:url(images/background.jpg)"></div>
+            <div class="container">
+                <div class="group">
+                    <div class="half">
+                        <h2>Parallax Background</h2>
+                        <p>A parallax effect is a popular effect where the background appears to scroll at a sligtly slower speed than the foreground. To achieve this effect place a div inside <code>.section</code> just before the <code>.container</code> Depending on the amount of content (height of the section) some background images may look better than others. You may need a taller image for long sections. <em>The recommended approach is to use parallax sections only for short content areas.</em></p>
+                    </div>
+                    <div class="half">
+                        <h2><label for="sample-parallax">Source Code:</label></h2>
+                        <textarea id="sample-parallax" class="form-control" rows="7" cols="80"><?php include("../sample/modules/section-parallax.php"); ?></textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+
 
         <!-- SECTION INVERTED -->
         <div class="section section-inverted">
@@ -237,26 +231,38 @@ $(document).ready(function() {
                 <div class="group">
                     <div class="half">
                         <h2>Section Inverted</h2>
-                        <?php include("../sample/modules/section-content-test.php");?>                    </div>
+                        <?php include("../sample/modules/section-content-test.php"); ?>
+                    </div>
                     <div class="half">
                         <h2><label for="sample-inverted">Source Code:</label></h2>
-                        <textarea id="sample-inverted" class="form-control" rows="6" cols="80"><?php include("../sample/modules/section-inverted.php");?></textarea>
-                    </div>
+                        <textarea id="sample-inverted" class="form-control" rows="6" cols="80"><?php include("../sample/modules/section-inverted.php"); ?></textarea>
+                        <hr>
+                        <h3>Panels</h3>
+                        <?php include("../sample/modules/panels.php"); ?>
+                        <?php include("../sample/modules/images.php"); ?>
+                    
+                     </div>
                 </div>
             </div>
         </div>
 
 
         <!-- SECTION COLLAPSED -->
-        <div class="section section-understated collapsed">
+        <div class="section collapsed">
             <div class="container">
                 <div class="group">
                     <div class="half">
                         <h2>Section Collapsed</h2>
-                        <?php include("../sample/modules/section-content-test.php");?>                    </div>
+                        <?php include("../sample/modules/section-content-test.php"); ?>
+                    </div>
                     <div class="half">
                         <h2><label for="sample-collapsed">Source Code:</label></h2>
-                        <textarea id="sample-collapsed" class="form-control" rows="6" cols="80"><?php include("../sample/modules/section-collapsed.php");?></textarea>
+                        <textarea id="sample-collapsed" class="form-control" rows="6" cols="80"><?php include("../sample/modules/section-collapsed.php"); ?></textarea>
+                        <hr>
+                        <h3>Panels</h3>
+                        <?php include("../sample/modules/panels.php"); ?>
+                        <?php include("../sample/modules/images.php"); ?>
+                    
                     </div>
                 </div>
             </div>
@@ -268,7 +274,9 @@ $(document).ready(function() {
     </main>
 </div>
 
-<?php include_once("../ssi/global-footer.php");?>
-<?php include_once("../ssi/scripts.php");?>
+<?php include_once("../ssi/global-footer.php"); ?>
+
+<?php include_once("../ssi/scripts.php"); ?>
+
 </body>
 </html>

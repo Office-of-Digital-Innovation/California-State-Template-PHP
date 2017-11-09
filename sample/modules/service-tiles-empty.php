@@ -1,11 +1,10 @@
-
 <div tabindex="0" class="service-tile" data-tile-id="fakeid" style="background-image:url(/sample/images/service-tiles/driving-test.jpg); background-size: cover;">
     <div class="teaser">
         <h4 class="title">Find a Traffic School</h4>
     </div>
 </div>
 
-<div tabindex="0" class="service-tile service-tile-empty third" data-url="/"  >
+<div tabindex="0" class="service-tile service-tile-empty third" data-url="/" style="background-image:url(/sample/images/background_6.jpg); background-size: cover;" >
     <span class="ca-gov-icon-gears"></span>
     <div class="teaser">
         <h4 class="title">Find More State Services</h4>
@@ -27,7 +26,7 @@
                             <p class="lead"><a href="">Department of Motor Vehicles (DMV)</a></p>
 
                             <div class="btn-row m-b">
-                                <a href="/service-profile.php" class="btn btn-default btn-block-xs"><span class="ca-gov-icon-info"></span> See Details</a>
+                                <a href="/service-profile.php"> class="btn btn-default btn-block-xs"><span class="ca-gov-icon-info"></span> See Details</a>
                                 <a href="/service-profile.php#locations-near-you" class="btn btn-default btn-block-xs"><span class="ca-gov-icon-location"></span> Locations Near You</a>
                                 <a href="/service-profile.php#frequently-asked-questions" class="btn btn-default btn-block-xs"><span class="ca-gov-icon-question"></span> FAQ's</a>
                             </div>
@@ -73,7 +72,7 @@
                             <p class="lead"><a href="">Department of Motor Vehicles (DMV)</a></p>
 
                             <div class="btn-row m-b">
-                                <a href="/service-profile.php" class="btn btn-default btn-block-xs"><span class="ca-gov-icon-info"></span> See Details</a>
+                                <a href="/service-profile.php"> class="btn btn-default btn-block-xs"><span class="ca-gov-icon-info"></span> See Details</a>
                                 <a href="/service-profile.php#locations-near-you" class="btn btn-default btn-block-xs"><span class="ca-gov-icon-location"></span> Locations Near You</a>
                                 <a href="/service-profile.php#frequently-asked-questions" class="btn btn-default btn-block-xs"><span class="ca-gov-icon-question"></span> FAQ's</a>
                             </div>

@@ -16,6 +16,7 @@
 <!-- For all browsers -->
 <link rel="stylesheet" href="/css/cagov.core.css">
 
+<script src="/js/search.js"></script>
 <!--
 Step 3
 Select a color scheme:
@@ -37,6 +38,17 @@ Select a color scheme:
 <!-- modernizr.com, feature detection -->
 <script src="/js/libs/modernizr-2.0.6.min.js"></script>
 <script src="/js/libs/modernizr-extra.min.js" ></script>
+
+
+<!-- Load jQuery from CDN with fallback to local copy -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js" type="text/javascript"></script>
+<script>
+    //Fall back to local copy if no jquery found
+    if (typeof jQuery == 'undefined') {
+        document.write(unescape("%3Cscript src='/js/libs/jquery-1.12.4.min.js' type='text/javascript'%3E%3C/script%3E"));
+    }
+</script>
+
 
 <!-- For iPad 3-->
 <link rel="apple-touch-icon" sizes="144x144" href="/images/template2014/apple-touch-icon-144x144.png">
@@ -63,6 +75,4 @@ Select a color scheme:
 <![endif]-->
 
 <!-- Include Google Analytics -->
-<?php
-include_once("ssi/analytics.php");
-?>
+<?php include_once("ssi/analytics.php"); ?>

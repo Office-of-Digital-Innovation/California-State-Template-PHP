@@ -1,9 +1,9 @@
-<!doctype html>
+﻿<!doctype html>
 <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
 <!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
 <!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
 <!--[if IE 9]>    <html class="no-js ie9 oldie" lang="en"> <![endif]-->
-<!--[if (gt IE 9)]><!--> <html class="no-js" lang="en"><!-- InstanceBegin template="/Templates/2-column.dwt" codeOutsideHTMLIsLocked="false" --> <!--<![endif]-->
+<!--[if (gt IE 9)]><!--> <html class="no-js" lang="en"><!-- InstanceBegin template="/Templates/1-column.dwt" codeOutsideHTMLIsLocked="false" --> <!--<![endif]-->
 <head>
 <!-- 
 California State Template
@@ -20,36 +20,45 @@ Based on Twitter Bootstrap
 <meta name="Description" content="State of California" />
 <meta name="Keywords" content="California, government" />
 <!-- InstanceEndEditable -->
-<?php include_once("../ssi/head-css-js.php");?><!-- InstanceBeginEditable name="head" -->
+<?php include_once("../ssi/head-css-js.php"); ?>
+<!-- InstanceBeginEditable name="head" -->
 <!-- InstanceEndEditable -->
 </head>
 
 <!-- possible body classes are "primary" and "two-column" -->
-<body class="two-column">
+<body class="">
 
 <header role="banner" id="header" class="global-header">
-	<div id="skip-to-content"><a href="#main-content">Skip to Main Content</a></div>
+	<div id="skip-to-content"><a href="#main-content">Skip to Main Content</a></div>    
+        <!-- Location Bar -->        <?php include_once("../ssi/location-bar.php"); ?>
+        
+        <!-- Include Utility Header -->
+		<?php include_once("../ssi/utility-header.php"); ?>	<!-- Settings Bar -->	
+        <?php include_once("../ssi/settings-bar.php"); ?>
+
+	    <!-- Include Branding -->
+    	<?php include_once("../ssi/branding.php"); ?>
+
+		<!-- Include Mobile Controls -->
+		<?php include_once("../ssi/mobile-controls.php"); ?>
     
-    <!-- Include Branding -->
-    <?php include_once("../ssi/branding.php");?>    
-    <!-- Include Mobile Controls -->
-    <?php include_once("../ssi/mobile-controls.php");?>    
     <div class="navigation-search">
         
         <div id="head-search" class="search-container">
             <!-- Include Search -->
-            <?php include_once("../ssi/search.php");?>        </div>
+            <?php include_once("../ssi/search.php"); ?>
+        </div>
         
         <!-- Include Navigation -->
-        <?php include_once("../ssi/navigation.php");?>    
+        <?php include_once("../ssi/navigation.php"); ?>
+    
     </div>
-	
     <div class="header-decoration"></div>
 </header>
 
 
 <div id="main-content" class="main-content">
-    <div class="wrapper">
+    <div class="container">
         <main class="main-primary">
         <!-- InstanceBeginEditable name="MainContent" -->
             <article>
@@ -62,42 +71,25 @@ Based on Twitter Bootstrap
                     <li>2 column</li>
                     <li>2 column with ribbon</li>
                 </ul>
-                <p>The templates with &quot;ribbon&quot; contain the large header with the &quot;swoosh&quot; embellishment. The ribbon templates are generally recommended for use as a homepage template. The 1 column and 2 column templates without the ribbon are recommended for internal pages.</p>
-                <h2>Optional Slideshow</h2>
-                <p>Pages created using the Ribbon templates  include a special Dreamweaver option for showing or hiding the <a href="/sample/rotating-header-banner.php">rotating slideshow</a> module commonly found on the homepage. By default the slideshow is turned on in the template, but it can be turned off by going to the 
-                    <mark>Modify &gt; Template Properties</mark>
-                    menu in Dreamweaver
-                and toggle the Show OptionalSlideshow checkbox. Below is a screenshot showing the option highlighted in red.</p>
+                <p>The templates with &quot;ribbon&quot; contain the primary, large and slideshow headers, see <a href="page-templates.php">Page Templates</a> for more information on header types. The ribbon templates are generally recommended for use as a homepage template. The 1 column and 2 column templates without the ribbon are recommended for internal pages.                </p>
+                <h2>Optional Banner</h2>
+                <p>Pages created using the ribbon templates  include Dreamweaver options for showing or hiding the various banner types. By default the primay banner is turned on in the template, but it can be turned off or swapped by going to the 
+                    <mark><strong>Edit</strong> (Modify in older versions ) <strong>&gt;</strong> <strong>Template Properties</strong></mark>
+                    menu in Dreamweaver and toggle  the checkbox of each banner type. </p>
+				<p><span class="label label-warning">NOTE:</span> There can only be <mark><strong>one </strong></mark>banner option selected at a time, having more than one type marked as <mark><strong>True</strong></mark> will break the page layout.</p>
                 <p><img src="images/dw-optionalslideshow.png" alt=""/></p>
-                <p><span class="label label-info">NOTE:</span> Please refer to the <a href="rotating-header-banner.php">Rotating Header Banner</a> page for details on editing the slideshow</p>
+                <p>Please refer to <a href="page-templates.php">Page Templates</a> for details on editing the content of each banner type.</p>
+              <p>&nbsp;</p>
             </article>
         <!-- InstanceEndEditable -->
         </main>
-        <div class="main-secondary">
-        <!-- InstanceBeginEditable name="SecondaryContent" -->
-            <div class="profile-banner">
-                <div class="inner" style="background:url(/images/banner/banner-guy.png) no-repeat right bottom">
-                    <div class="banner-subtitle">Government Entity Title</div>
-                    <div class="banner-title">Official Name</div>
-                    <div class="banner-link"><a href="/">Associated Link</a></div>
-                </div>
-            </div>
-            
-            <div class="panel panel-standout">
-                <div class="panel-heading">
-                    <h2><span class="ca-gov-icon-info"></span> Panel Style D</h2>
-                </div>
-                <div class="panel-body">
-                    <p>Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur blandit tempus porttitor. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
-                </div>
-            </div>
-        <!-- InstanceEndEditable -->
-        </div>
     </div>
 </div>
 
 
-<?php include_once("../ssi/global-footer.php");?>
-<?php include_once("../ssi/scripts.php");?>
+<?php include_once("../ssi/global-footer.php"); ?>
+
+<?php include_once("../ssi/scripts.php"); ?>
+
 </body>
 <!-- InstanceEnd --></html>
