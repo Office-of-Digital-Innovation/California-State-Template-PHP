@@ -94,11 +94,11 @@ Based on Twitter Bootstrap
                         <!-- Tab panes -->
                         <div class="tab-content responsive">
                             <div class="tab-pane active" id="html">
-                                 <textarea class="form-control" rows="10" cols="80"><?php include("../sample/modules/job-list.php"); ?></textarea>
+                              <textarea aria-label="HTML Markup" class="form-control" rows="10" cols="80"><?php include("../sample/modules/job-list.php"); ?></textarea>
                             </div>
                             <div class="tab-pane" id="microdata">
                                 <p class="alert alert-info">NOTE: This module makes use of a <code>datetime</code> property set in the <strong>ISO 8601</strong> format. Be sure to set the time correctly for each job-item.</p>
-                                 <textarea class="form-control" rows="10" cols="80"><?php include("../sample/modules/job-list-schema.php"); ?></textarea>
+                              <textarea aria-label="Microdata" class="form-control" rows="10" cols="80"><?php include("../sample/modules/job-list-schema.php"); ?></textarea>
                             </div>
                         </div>
                     </div>

@@ -85,10 +85,10 @@ Based on Twitter Bootstrap
                         <!-- Tab panes -->
                         <div class="tab-content responsive">
                             <div class="tab-pane active" id="html">
-                                 <textarea class="form-control" rows="10" cols="80"><?php include("../sample/modules/location.php"); ?></textarea>
+                              <textarea aria-label="HTML Markup" class="form-control" rows="10" cols="80"><?php include("../sample/modules/location.php"); ?></textarea>
                             </div>
                             <div class="tab-pane" id="microdata">
-                                 <textarea class="form-control" rows="10" cols="80"><?php include("../sample/modules/location-schema.php"); ?></textarea>
+                              <textarea aria-label="Microdata" class="form-control" rows="10" cols="80"><?php include("../sample/modules/location-schema.php"); ?></textarea>
                             </div>
                         </div>
                     </div>
@@ -107,17 +107,17 @@ Based on Twitter Bootstrap
                     <h2>Source Code:</h2>
                     
                     <div class="tab-group">
-                        <ul id="sourceCode" class="nav nav-tabs" role="tablist">
+                      <ul id="sourceCode2" class="nav nav-tabs" role="tablist">
                             <li class="active"><a href="#minihtml" role="tab" data-toggle="tab">HTML Markup</a></li>
                             <li><a href="#minimicrodata" role="tab" data-toggle="tab">Microdata</a></li>
                         </ul>
                         <!-- Tab panes -->
                         <div class="tab-content responsive">
                             <div class="tab-pane active" id="minihtml">
-                                 <textarea class="form-control" rows="10" cols="80"><?php include("../sample/modules/location-mini.php"); ?></textarea>
+                              <textarea aria-label="HTML Markup" class="form-control" rows="10" cols="80"><?php include("../sample/modules/location-mini.php"); ?></textarea>
                             </div>
                             <div class="tab-pane" id="minimicrodata">
-                                 <textarea class="form-control" rows="10" cols="80"><?php include("../sample/modules/location-mini-schema.php"); ?></textarea>
+                              <textarea aria-label="Microdata" class="form-control" rows="10" cols="80"><?php include("../sample/modules/location-mini-schema.php"); ?></textarea>
                             </div>
                         </div>
                     </div>
@@ -133,17 +133,17 @@ Based on Twitter Bootstrap
                 <h2>Source Code:</h2>
                     
                 <div class="tab-group">
-                    <ul id="sourceCode" class="nav nav-tabs" role="tablist">
+                  <ul id="sourceCode3" class="nav nav-tabs" role="tablist">
                         <li class="active"><a href="#bannerhtml" role="tab" data-toggle="tab">HTML Markup</a></li>
                         <li><a href="#bannermicrodata" role="tab" data-toggle="tab">Microdata</a></li>
                     </ul>
                     <!-- Tab panes -->
                     <div class="tab-content responsive">
                         <div class="tab-pane active" id="bannerhtml">
-                             <textarea class="form-control" rows="10" cols="80"><?php include("../sample/modules/location-banner.php"); ?></textarea>
+                          <textarea aria-label="HTML Markup" class="form-control" rows="10" cols="80"><?php include("../sample/modules/location-banner.php"); ?></textarea>
                         </div>
                         <div class="tab-pane" id="bannermicrodata">
-                             <textarea class="form-control" rows="10" cols="80"><?php include("../sample/modules/location-banner-schema.php"); ?></textarea>
+                          <textarea aria-label="Microdata" class="form-control" rows="10" cols="80"><?php include("../sample/modules/location-banner-schema.php"); ?></textarea>
                         </div>
                     </div>
                 </div>

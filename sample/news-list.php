@@ -201,7 +201,7 @@ Based on Twitter Bootstrap
                                     </div>
                                     <div class="modal-body">
                                         <label for="sample-news-list-sidebar">Source Code:</label>
-                                        <textarea id="sample-news-list-sidebar" class="form-control" rows="10" cols="80"><?php include("../sample/modules/news-list-sidebar.php"); ?></textarea>
+                                      <textarea id="sample-news-list-microdata" class="form-control" rows="10" cols="80"><?php include("../sample/modules/news-list-sidebar.php"); ?></textarea>
                                     </div>
                                     <div class="modal-footer">
                                         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>

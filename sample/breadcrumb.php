@@ -89,8 +89,8 @@ Based on Twitter Bootstrap
                      <?php include("../sample/modules/breadcrumb-dynamic.php"); ?>
                 </div>
                  <div class="half">
-                    <h2><label for="sample-media">Source Code:</label></h2>
-                    <textarea id="sample-media" class="form-control" rows="10" cols="80"><?php include("../sample/modules/breadcrumb-dynamic.php"); ?></textarea>
+                    <h2><label for="sample-media-dynamic">Source Code:</label></h2>
+                    <textarea id="sample-media-dynamic" class="form-control" rows="10" cols="80"><?php include("../sample/modules/breadcrumb-dynamic.php"); ?></textarea>
                 </div> 
             </div>
         </main>

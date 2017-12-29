@@ -48,9 +48,27 @@
                             </div>
 
                             <ul class="list-inline list-unstyled m-t-md">
-                                <li><a href=""><span class="ca-gov-icon-twitter" aria-hidden="true"><span class="sr-only">Twitter</span></span></a></li>
-                                <li><a href=""><span class="ca-gov-icon-facebook" aria-hidden="true"><span class="sr-only">Facebook</span></span></a></li>
-                                <li><a href=""><span class="ca-gov-icon-google-plus" aria-hidden="true"><span class="sr-only">Google+</span></span></a></li>
+                              <li>
+                                <a href="">
+                                  <span class="ca-gov-icon-twitter">
+                                    <span class="sr-only">Twitter</span>
+                                  </span>
+                                </a>
+                              </li>
+                              <li>
+                                <a href="">
+                                  <span class="ca-gov-icon-facebook">
+                                    <span class="sr-only">Facebook</span>
+                                  </span>
+                                </a>
+                              </li>
+                              <li>
+                                <a href="">
+                                  <span class="ca-gov-icon-google-plus">
+                                    <span class="sr-only">Google+</span>
+                                  </span>
+                                </a>
+                              </li>
                             </ul>
                         </div>
 
@@ -94,9 +112,27 @@
                             </div>
 
                             <ul class="list-inline list-unstyled m-t-md">
-                                <li><a href=""><span class="ca-gov-icon-twitter" aria-hidden="true"><span class="sr-only">Twitter</span></span></a></li>
-                                <li><a href=""><span class="ca-gov-icon-facebook" aria-hidden="true"><span class="sr-only">Facebook</span></span></a></li>
-                                <li><a href=""><span class="ca-gov-icon-google-plus" aria-hidden="true"><span class="sr-only">Google+</span></span></a></li>
+                              <li>
+                                <a href="">
+                                  <span class="ca-gov-icon-twitter">
+                                    <span class="sr-only">Twitter</span>
+                                  </span>
+                                </a>
+                              </li>
+                              <li>
+                                <a href="">
+                                  <span class="ca-gov-icon-facebook">
+                                    <span class="sr-only">Facebook</span>
+                                  </span>
+                                </a>
+                              </li>
+                              <li>
+                                <a href="">
+                                  <span class="ca-gov-icon-google-plus" >
+                                    <span class="sr-only">Google+</span>
+                                  </span>
+                                </a>
+                              </li>
                             </ul>
                         </div>
 

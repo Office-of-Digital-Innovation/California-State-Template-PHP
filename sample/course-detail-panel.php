@@ -79,10 +79,10 @@ Based on Twitter Bootstrap
                         <!-- Tab panes -->
                         <div class="tab-content responsive">
                             <div class="tab-pane active" id="html">
-                                 <textarea class="form-control" rows="10" cols="80"><?php include("../sample/modules/course-detail-panel.php"); ?></textarea>
+                              <textarea aria-label="HTML Markup" class="form-control" rows="10" cols="80"><?php include("../sample/modules/course-detail-panel.php"); ?></textarea>
                             </div>
                             <div class="tab-pane" id="microdata">
-                                 <textarea class="form-control" rows="10" cols="80"><?php include("../sample/modules/course-detail-panel-schema.php"); ?></textarea>
+                              <textarea aria-label="Microdata" class="form-control" rows="10" cols="80"><?php include("../sample/modules/course-detail-panel-schema.php"); ?></textarea>
                             </div>
                         </div>
                     </div>

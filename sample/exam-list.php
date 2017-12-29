@@ -77,8 +77,8 @@ Based on Twitter Bootstrap
                 </div>
                  <div class="half">
                     <h2>Source Code:</h2>
-                    
-                    <textarea class="form-control" rows="10" cols="80"><?php include("../sample/modules/exam-list.php"); ?></textarea>
+
+                   <textarea aria-label="HTML Markup" class="form-control" rows="10" cols="80"><?php include("../sample/modules/exam-list.php"); ?></textarea>
                     
                 </div> 
             </div>
