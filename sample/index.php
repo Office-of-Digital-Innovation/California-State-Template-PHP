@@ -89,7 +89,7 @@
 
         <h2>Color Schemes</h2>
           <ul class="list-primary">
-              <li><a href="colorscheme-oceanside.php">Oceanside</a>
+              <li><a href="colorscheme-oceanside.php">Oceanside</a></li>
               <li><a href="colorscheme-orangecounty.php">Orange County</a></li>
               <li><a href="colorscheme-pasorobles.php">Paso Robles</a></li>
               <li><a href="colorscheme-santabarbara.php">Santa Barbara</a></li>
@@ -97,10 +97,7 @@
               <li><a href="colorscheme-mono.php">Mono</a></li>
               <li><a href="colorscheme-trinity.php">Trinity</a></li>
               <li><a href="colorscheme-eureka.php">Eureka</a></li>
-              <!-- <li><a href="colorscheme-orangecounty.php">Orange County</a></li>
-        <li><a href="colorscheme-pasorobles.php">Paso Robles</a></li>
-        <li><a href="colorscheme-santabarbara.php">Santa Barbara</a></li>
-        <li><a href="colorscheme-sierra.php">Sierra</a></li> -->
+              <li><a href="colorscheme-sacramento.php">Sacramento</a></li>
           </ul>
 
         <h2>Content Modules</h2>
