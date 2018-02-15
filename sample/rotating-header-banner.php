@@ -33,22 +33,22 @@ Based on Twitter Bootstrap
     
     <!-- Include Mobile Controls -->
     <?php include_once("../ssi/mobile-controls.php"); ?>
+  
     <div class="navigation-search">
+      <!-- Include Navigation -->
+      <?php include_once("../ssi/navigation.php"); ?>
+      
         <div id="head-search" class="search-container">
             <!-- Include Search -->
             <?php include_once("../ssi/search.php"); ?>
         </div>
-        
-        <!-- Include Navigation -->
-        <?php include_once("../ssi/navigation.php"); ?>
-        
-        <!-- Include Optional Slideshow banner -->
-        <?php include("../ssi/header-slideshow-banner.php"); ?>
+
     </div>
-	<div class="header-decoration"></div>
-</header>
+    <div class="header-decoration"></div>
+  </header>
 
-
+  <!-- Include Optional Slideshow banner -->
+  <?php include("../ssi/header-slideshow-banner.php"); ?>
 
 <div id="main-content" class="main-content">
     <div class="wrapper">

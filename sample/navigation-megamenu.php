@@ -39,12 +39,14 @@ Based on Twitter Bootstrap
     <?php include_once("../ssi/mobile-controls.php"); ?>
 
     <div class="navigation-search">
+      <!-- Include Navigation -->
+      <?php include("../sample/modules/nav-megamenu.php"); ?>
+      
         <div id="head-search" class="search-container">
             <!-- Include Search -->
             <?php include_once("../ssi/search.php"); ?>
         </div>
-        <!-- Include Navigation -->
-        <?php include("../sample/modules/nav-megamenu.php"); ?>
+
     </div>
     <div class="header-decoration"></div>
 </header>

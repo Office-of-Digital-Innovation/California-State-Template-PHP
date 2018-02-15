@@ -31,7 +31,9 @@ Based on Twitter Bootstrap
     <!-- Location Bar -->        <?php include_once("../ssi/location-bar.php"); ?>
         
         <!-- Include Utility Header -->
-		<?php include_once("../ssi/utility-header.php"); ?>	<!-- Settings Bar -->	
+		<?php include_once("../ssi/utility-header.php"); ?>	
+  
+  <!-- Settings Bar -->	
 		<?php include_once("../ssi/settings-bar.php"); ?>
 
 		<!-- Include Branding -->
@@ -41,14 +43,13 @@ Based on Twitter Bootstrap
     <?php include_once("../ssi/mobile-controls.php"); ?>
     
     <div class="navigation-search">
+      <!-- Include Navigation -->
+      <?php include("../sample/modules/nav-dropdown.php"); ?>
         
         <div id="head-search" class="search-container">
             <!-- Include Search -->
             <?php include_once("../ssi/search.php"); ?>
         </div>
-        
-        <!-- Include Navigation -->
-        <?php include("../sample/modules/nav-dropdown.php"); ?>
     
     </div>
     

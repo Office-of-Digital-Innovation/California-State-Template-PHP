@@ -43,14 +43,13 @@ Based on Twitter Bootstrap
     <?php include("../sample/modules/mobile-controls-sample.php"); ?>
     
     <div class="navigation-search">
+      <!-- Include Navigation -->
+      <?php include("../sample/modules/nav-megamenu-mobile-icons.php"); ?>
         
         <div id="head-search" class="search-container">
             <!-- Include Search -->
             <?php include_once("../ssi/search.php"); ?>
         </div>
-        
-        <!-- Include Navigation -->
-        <?php include("../sample/modules/nav-megamenu-mobile-icons.php"); ?>
     
     </div>
     

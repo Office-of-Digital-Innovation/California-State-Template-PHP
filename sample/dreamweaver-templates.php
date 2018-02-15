@@ -20,7 +20,7 @@ Based on Twitter Bootstrap
 <meta name="Description" content="State of California" />
 <meta name="Keywords" content="California, government" />
 <!-- InstanceEndEditable -->
-<?php include_once("../ssi/head-css-js.php"); ?>
+<!--#include virtual="/ssi/head-css-js.html" -->
 <!-- InstanceBeginEditable name="head" -->
 <!-- InstanceEndEditable -->
 </head>
@@ -29,28 +29,23 @@ Based on Twitter Bootstrap
 <body class="">
 
 <header role="banner" id="header" class="global-header">
-	<div id="skip-to-content"><a href="#main-content">Skip to Main Content</a></div>    
-        <!-- Location Bar -->        <?php include_once("../ssi/location-bar.php"); ?>
-        
-        <!-- Include Utility Header -->
-		<?php include_once("../ssi/utility-header.php"); ?>	<!-- Settings Bar -->	
-        <?php include_once("../ssi/settings-bar.php"); ?>
-
-	    <!-- Include Branding -->
-    	<?php include_once("../ssi/branding.php"); ?>
-
-		<!-- Include Mobile Controls -->
-		<?php include_once("../ssi/mobile-controls.php"); ?>
+	<div id="skip-to-content"><a href="#main-content">Skip to Main Content</a></div>
+    
+    <!-- Include Branding -->
+    <!--#include virtual="/ssi/branding.html" -->
+    
+    <!-- Include Mobile Controls -->
+    <!--#include virtual="/ssi/mobile-controls.html" -->
     
     <div class="navigation-search">
         
+        <!-- Include Navigation -->
+        <!--#include virtual="/ssi/navigation.html" -->
+        
         <div id="head-search" class="search-container">
             <!-- Include Search -->
-            <?php include_once("../ssi/search.php"); ?>
+            <!--#include virtual="/ssi/search.html" -->
         </div>
-        
-        <!-- Include Navigation -->
-        <?php include_once("../ssi/navigation.php"); ?>
     
     </div>
     <div class="header-decoration"></div>
@@ -58,7 +53,7 @@ Based on Twitter Bootstrap
 
 
 <div id="main-content" class="main-content">
-    <div class="container">
+    <div class="wrapper">
         <main class="main-primary">
         <!-- InstanceBeginEditable name="MainContent" -->
             <article>
@@ -87,9 +82,9 @@ Based on Twitter Bootstrap
 </div>
 
 
-<?php include_once("../ssi/global-footer.php"); ?>
+<!--#include virtual="/ssi/global-footer.html" -->
 
-<?php include_once("../ssi/scripts.php"); ?>
+<!--#include virtual="/ssi/scripts.html" -->
 
 </body>
 <!-- InstanceEnd --></html>

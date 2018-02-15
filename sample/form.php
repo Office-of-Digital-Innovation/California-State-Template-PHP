@@ -51,14 +51,16 @@ Based on Twitter Bootstrap
     
     <!-- Include Mobile Controls -->
     <?php include_once("../ssi/mobile-controls.php"); ?>
+  
     <div class="navigation-search">
+      <!-- Include Navigation -->
+      <?php include_once("../ssi/navigation.php"); ?>
+      
         <div id="head-search" class="search-container">
             <!-- Include Search -->
             <?php include_once("../ssi/search.php"); ?>
         </div>
-        
-        <!-- Include Navigation -->
-        <?php include_once("../ssi/navigation.php"); ?>
+
     </div>
 	<div class="header-decoration"></div>
 </header>

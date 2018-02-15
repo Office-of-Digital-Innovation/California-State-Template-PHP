@@ -20,7 +20,7 @@ Based on Twitter Bootstrap
 <meta name="Description" content="State of California" />
 <meta name="Keywords" content="California, government" />
 <!-- InstanceEndEditable -->
-<?php include_once("ssi/head-css-js.php"); ?>
+<!--#include virtual="/ssi/head-css-js.html" -->
 <!-- InstanceBeginEditable name="head" -->
 <!-- InstanceEndEditable -->
 <!-- InstanceParam name="OptionalSlideshow" type="boolean" value="true" -->
@@ -33,34 +33,33 @@ Based on Twitter Bootstrap
 	<div id="skip-to-content"><a href="#main-content">Skip to Main Content</a></div>
     
     <!-- Include Branding -->
-    <?php include_once("ssi/branding.php"); ?>
+    <!--#include virtual="/ssi/branding.html" -->
     
     <!-- Include Mobile Controls -->
-    <?php include_once("ssi/mobile-controls.php"); ?>
+    <!--#include virtual="/ssi/mobile-controls.html" -->
     
     <div class="navigation-search">
+        <!-- Include Navigation -->
+        <!--#include virtual="/ssi/navigation.html" -->
         
         <div id="head-search" class="search-container">
             <!-- Include Search -->
-            <?php include_once("ssi/search.php"); ?>
+            <!--#include virtual="/ssi/search.html" -->
         </div>
-        
-        <!-- Include Navigation -->
-        <?php include_once("ssi/navigation.php"); ?>
     
     </div>
 	
     <!-- Step 5: Header Images -->
     <!-- Include for optional slideshow banner -->
     
-    <?php include("ssi/header-slideshow-banner.php"); ?>
+    <!--#include virtual="/ssi/header-slideshow-banner.html" -->
     
     <div class="header-decoration"></div>
 </header>
 
 
 <div id="main-content" class="main-content">
-    <div class="section">
+    <div class="wrapper">
         <main class="main-primary">
         <!-- InstanceBeginEditable name="MainContent" -->
             <article>
@@ -94,9 +93,9 @@ Based on Twitter Bootstrap
 </div>
 
 
-<?php include_once("ssi/global-footer.php"); ?>
+<!--#include virtual="/ssi/global-footer.html" -->
 
-<?php include_once("ssi/scripts.php"); ?>
+<!--#include virtual="/ssi/scripts.html" -->
 
 </body>
 <!-- InstanceEnd --></html>
