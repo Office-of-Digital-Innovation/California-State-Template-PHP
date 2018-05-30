@@ -252,7 +252,7 @@ tabpanel.prototype.bindHandlers = function () {
     });
 
     // bind a keypress handler for the panel 
-    this.$panels.on("keypress", function (e) {
+    this.$panels.on("keypress",function (e) {
         return thisObj.handlePanelKeyPress($(this), e);
     });
 

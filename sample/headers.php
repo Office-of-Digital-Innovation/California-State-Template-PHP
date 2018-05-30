@@ -78,6 +78,14 @@ Based on Twitter Bootstrap
                     <textarea id="sample-headers" class="form-control" rows="10" cols="80"><?php include("../sample/modules/headers.php"); ?></textarea>
                 </div> 
             </div>
+          <br />
+          <div class="group">
+            <div class="col-sm-12">
+              <p class="lead">
+                For more information about California State Web Template typography refer to <a href="typography.php">typography</a> page.
+              </p>
+            </div>
+          </div>
         </main>
     </div>
 </div>

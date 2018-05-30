@@ -157,6 +157,7 @@
               <li><a href="testimonials.php">Testimonials</a></li>
               <li><a href="text-accent.php">Text Accent Colors</a></li>
               <li><a href="toggle.php">Toggle</a></li>
+              <li><a href="typography.php">Typography</a></li>
           </ul>
        <h2>Dreamweaver Templates</h2>
           <ul class="list-primary">
