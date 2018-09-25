@@ -164,6 +164,17 @@
               <li><a href="dreamweaver-templates.php">Using Dreamweaver Templates</a></li>
           </ul> 
 
+		  <h2>Additional Bootstrap CSS & Components</h2>
+            <p>
+                We strongly recommend using the documented State Template Content Modules and Components
+                whenever possible; however, for more CSS classes and options as well as components we suggest
+                utilizing what is available in Bootstrap first, before developing your own custom code.
+            </p>
+            <p>
+                <span class="label label-primary">NOTE:</span> When using custom components and content
+                modules that are not documented as part of the State Template, migration to future versions
+                of the State Template may require additional work.
+            </p>
       </main>
 
       <div class="main-secondary">
