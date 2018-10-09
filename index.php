@@ -6,9 +6,8 @@
 <!--[if (gt IE 9)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 
 <head>
-    <!--
-        California State Template
-        Version 5.0
+    <!--        California State Template
+        Version 5.0.2
 
         Based on Twitter Bootstrap
     -->
@@ -69,7 +68,6 @@
             <!-- Begin Main Content -->
             <?php include("ssi/section-service-group.php"); ?>
             <?php include("ssi/section-open-data.php"); ?>
-            <?php include("ssi/section-green-buildings.php"); ?>
             <?php include("ssi/section-green-stats.php"); ?>
             <?php include("ssi/section-mobile-gallery.php"); ?>
            

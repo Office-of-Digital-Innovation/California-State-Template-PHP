@@ -7,9 +7,8 @@
 
 
 <head>
-<!-- 
-California State Template
-Version 5.0
+<!--        California State Template
+        Version 5.0.2
  
 Based on Twitter Bootstrap
 -->

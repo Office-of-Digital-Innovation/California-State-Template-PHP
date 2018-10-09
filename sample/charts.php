@@ -5,9 +5,8 @@
 <!--[if IE 9]>    <html class="no-js ie9 oldie" lang="en"> <![endif]-->
 <!--[if (gt IE 9)]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
 <head>
-<!--
-California State Template
-Version 4.0
+<!--        California State Template
+        Version 5.0.2
 
 Based on Twitter Bootstrap
 -->
@@ -19,8 +18,15 @@ Based on Twitter Bootstrap
 <meta name="Description" content="State of California" />
 <meta name="Keywords" content="California, government" />
 
+
+
 <?php include_once("../ssi/head-css-js.php"); ?>
 
+
+    <!-- Plotly JS -->
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <!-- Circles JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/circles/0.0.6/circles.min.js"></script>
 </head>
 
 <body>
@@ -66,79 +72,138 @@ Based on Twitter Bootstrap
                 <li class="active">Lists</li>
             </ol>
 
-         <h1>Charts</h1>
-         <!-- TODO: Document how a user can utilize either a csv file moring with x,y columns. Or a custom
-               JSON config to take advantage of all Plotly's configurations and features -->
-            <div class="group">
-                <div class="half">
-                    <h2>Bar</h2>
-                  <div>
-                    <?php include("../sample/modules/chart-bar.php"); ?>
-                  </div>
-                </div>
-                 <div class="half">
-                    <h2><label >Source Code:</label></h2>
-                    <textarea  class="form-control" rows="4" cols="80"><?php include("../sample/modules/chart-bar.php"); ?></textarea>
-
+        <h1>Charts</h1>
+                <p>Following charts examples are using Plotly and Circles open source graphing JS libraries. To use use plotly.js or circle.js libraries simply add their CDN links to your <code>head</code> section. </p>
+<pre>&lt;!-- Plotly JS --&gt;
+&lt;script src="https://cdn.plot.ly/plotly-latest.min.js"&gt;&lt;/script&gt;
+&lt;!-- Circles JS --&gt;
+&lt;script src="https://cdnjs.cloudflare.com/ajax/libs/circles/0.0.6/circles.min.js"&gt;&lt;/script&gt;</pre>
+    <div class="group">
+        <div class="half">
+            <h2>Bar</h2>
+            <div>
+                <?php include("../sample/modules/chart-bar.php"); ?>
+            </div>
+        </div>
+        <div class="half">
+            <h2><label>Source Code:</label></h2>
+            <div class="tab-group">
+                <ul id="sourceCode" class="nav nav-tabs" role="tablist">
+                    <li class="active"><a href="#html" role="tab" data-toggle="tab">HTML Markup</a></li>
+                    <li><a href="#javascript" role="tab" data-toggle="tab">JavaScript</a></li>
+                </ul>
+                <!-- Tab panes -->
+                <div class="tab-content responsive">
+                    <div class="tab-pane active" id="html">
+                        <textarea aria-label="HTML Markup" class="form-control" rows="4" cols="80"><?php include("../sample/modules/chart-bar.php"); ?></textarea>
+                    </div>
+                    <div class="tab-pane" id="javascript">
+                        <textarea aria-label="JavaScript" class="form-control" rows="10" cols="80"><?php include("../sample/modules/chart-bar-js.php"); ?></textarea>
+                    </div>
                 </div>
             </div>
 
-            <hr>
-
-            <div class="group">
-                <div class="half">
-                    <h2>Line</h2>
-
-                  <div >
-                    <?php include("../sample/modules/chart-line.php"); ?>
-                  </div>
-                </div>
-                 <div class="half">
-                    <h2><label >Source Code:</label></h2>
-                    <textarea  class="form-control" rows="4" cols="80"><?php include("../sample/modules/chart-line.php"); ?></textarea>
-
-                </div>
-            </div>
-
-            <hr>
-
-            <div class="group">
-                <div class="half">
-                    <h2>Pie</h2>
-
-                  <div >
-                    <?php include("../sample/modules/chart-pie.php"); ?>
-                  </div>
-                </div>
-                 <div class="half">
-                    <h2><label >Source Code:</label></h2>
-                    <textarea  class="form-control" rows="4" cols="80"><?php include("../sample/modules/chart-pie.php"); ?></textarea>
-                  
-                </div>
-            </div>
-
-            <hr>
-
-            <div class="group">
-                <div class="half">
-                    <h2>Dashboard Arch</h2>
-
-                  <div style="margin:0 auto;">
-                    <?php include("../sample/modules/chart-dash-arch.php"); ?>
-                  </div>
-                </div>
-                 <div class="half">
-                    <h2><label >Source Code:</label></h2>
-                    <textarea  class="form-control" rows="10" cols="80"><?php include("../sample/modules/chart-dash-arch.php"); ?></textarea>
-                </div>
-            </div>
-
-            <hr>
-
-
-        </main>
+        </div>
     </div>
+
+    <hr>
+
+    <div class="group">
+        <div class="half">
+            <h2>Line</h2>
+
+            <div>
+			<?php include("../sample/modules/chart-line.php"); ?>
+            </div>
+        </div>
+        <div class="half">
+            <h2><label>Source Code:</label></h2>
+            <div class="tab-group">
+                <ul id="sourceCode" class="nav nav-tabs" role="tablist">
+                    <li class="active"><a href="#html-line" role="tab" data-toggle="tab">HTML Markup</a></li>
+                    <li><a href="#javascript-line" role="tab" data-toggle="tab">JavaScript</a></li>
+                </ul>
+                <!-- Tab panes -->
+                <div class="tab-content responsive">
+                    <div class="tab-pane active" id="html-line">
+                        <textarea aria-label="HTML Markup" class="form-control" rows="4" cols="80"><?php include("../sample/modules/chart-line.php"); ?></textarea>
+                    </div>
+                    <div class="tab-pane" id="javascript-line">
+                        <textarea aria-label="JavaScript" class="form-control" rows="10" cols="80"><?php include("../sample/modules/chart-line-js.php"); ?></textarea>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="group">
+        <div class="half">
+            <h2>Pie</h2>
+
+            <div>
+                <?php include("../sample/modules/chart-pie.php"); ?>
+            </div>
+        </div>
+        <div class="half">
+            <h2><label>Source Code:</label></h2>
+            <div class="tab-group">
+                <ul id="sourceCode" class="nav nav-tabs" role="tablist">
+                    <li class="active"><a href="#html-pie" role="tab" data-toggle="tab">HTML Markup</a></li>
+                    <li><a href="#javascript-pie" role="tab" data-toggle="tab">JavaScript</a></li>
+                </ul>
+                <!-- Tab panes -->
+                <div class="tab-content responsive">
+                    <div class="tab-pane active" id="html-pie">
+                        <textarea aria-label="HTML Markup" class="form-control" rows="4" cols="80"><?php include("../sample/modules/chart-pie.php"); ?></textarea>
+                    </div>
+                    <div class="tab-pane" id="javascript-pie">
+                        <textarea aria-label="JavaScript" class="form-control" rows="10" cols="80"><?php include("../sample/modules/chart-pie-js.php"); ?></textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="group" id="show-on-scroll">
+        <div class="half">
+            <h2>Number Counter Circle Chart</h2>
+            <div class="m-b-md text-center" id="circle1">
+            </div>
+            <h4 class="text-center">UI Design</h4>
+            <p class="p-x m-b-0 text-center">Sed feugiat porttitor nunc etiam gravi daex justo ac rhoncus</p>
+
+        </div>
+        <div class="half">
+            <h2><label>Source Code:</label></h2>
+            <div class="tab-group">
+                <ul id="sourceCode" class="nav nav-tabs" role="tablist">
+                    <li class="active"><a href="#html-circles" role="tab" data-toggle="tab">HTML Markup</a></li>
+                    <li><a href="#javascript-circles" role="tab" data-toggle="tab">JavaScript</a></li>
+                </ul>
+                <!-- Tab panes -->
+                <div class="tab-content responsive">
+                    <div class="tab-pane active" id="html-circles">
+                        <textarea aria-label="HTML Markup" class="form-control" rows="4" cols="80"><?php include("../sample/modules/number-counter-circles.php"); ?></textarea>
+                    </div>
+                    <div class="tab-pane" id="javascript-circles">
+                        <textarea aria-label="JavaScript" class="form-control" rows="10" cols="80"><?php include("../sample/modules/number-counter-circles-js.php"); ?></textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        <hr>
+
+
+</main>
 </div>
+</div>
+
 
 <?php include_once("../ssi/global-footer.php"); ?>
 

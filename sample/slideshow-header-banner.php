@@ -7,9 +7,8 @@
 <!--[if (gt IE 9)]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
 
 <head>
-<!-- 
-California State Template
-Version 4.01
+<!--        California State Template
+        Version 5.0.21
   
 Based on Twitter Bootstrap
 -->

@@ -101,10 +101,11 @@ function initPlotly(d3, Plotly) {
             //     console.log(color);
             //     path.css({'stroke-width': 7, 'stroke': color})
             // });
-        });
+        })
 
         $(window).on('resize', function () {
-            var gd3 = d3.select(container.get(0)).style({height: getHeight()});
+
+            var gd3 = d3.select(container.get(0)).style({ height: getHeight() });
             Plotly.Plots.on("resize", gd);
         });
 
@@ -192,10 +193,10 @@ function getConfig(d3, container, func) {
 
     if (xValues) {
         xValues = xValues.split('|').map(function (d) {
-            if(isNaN(parseFloat(d))) {
-              return d;
+            if (isNaN(parseFloat(d))) {
+                return d;
             }
-            return + d
+            return +d
         });
     } else {
         xValues = [];
@@ -211,7 +212,7 @@ function getConfig(d3, container, func) {
         case "bar":
             config[0].x = xValues
             config[0].y = yValues.map(function (d) {
-                return + d
+                return +d
             });
             break;
 
@@ -258,7 +259,7 @@ function getConfig(d3, container, func) {
 function initStats() {
     var container = $(this);
     var libs = ['d3'];
-    if ($('html').hasClass('ie8')|| $('html').hasClass('ie7') ) {
+    if ($('html').hasClass('ie8') || $('html').hasClass('ie7')) {
         return;
         //  TODO: Unsupport graphs fall back to something else
     }
@@ -292,7 +293,7 @@ function initStats() {
 
         var donutChart = new Donut(config);
 
-        donutChart.load({data: 0});
+        donutChart.load({ data: 0 });
 
         function sizeText() {
             var width = chart.get(0).clientWidth;
@@ -332,7 +333,7 @@ function initStats() {
                 };
                 config.data = data;
                 donutChart = new Donut(config);
-                donutChart.load({data: data});
+                donutChart.load({ data: data });
                 sizeText();
             }, 10);
 
@@ -343,7 +344,7 @@ function initStats() {
             // start when it appears at the bottom
             offset: '100%',
             handler: function () {
-                donutChart.load({data: data})
+                donutChart.load({ data: data })
             }
         });
     })
@@ -437,7 +438,7 @@ function initHalfDonut(d3) {
 
         // Compute the numeric values for each data element.
         var values = data.map(function (d, i) {
-            return + accessor.call(self, d, i);
+            return +accessor.call(self, d, i);
         });
 
         var sum = d3.sum(values),
@@ -567,10 +568,10 @@ function initHalfDonut(d3) {
 
     function removeArcTween(a, i, donut) {
         var emptyArc = {
-                startAngle: degToRad(donut.config.endAngle),
-                endAngle: degToRad(donut.config.endAngle),
-                value: 0
-            },
+            startAngle: degToRad(donut.config.endAngle),
+            endAngle: degToRad(donut.config.endAngle),
+            value: 0
+        },
             i = d3.interpolate(a, emptyArc);
         return function (t) {
             return donut.arc(i(t));
