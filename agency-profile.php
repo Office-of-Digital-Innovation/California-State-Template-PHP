@@ -9,7 +9,7 @@
 
 <head>
   <!--        California State Template
-        Version 5.0.2
+        Version 5.0.3
 
 Based on Twitter Bootstrap
 -->
@@ -32,8 +32,7 @@ Based on Twitter Bootstrap
   <header role="banner" id="header" class="global-header fixed">
     <div id="skip-to-content"><a href="#main-content">Skip to Main Content</a></div>
     
-    <!-- Location Bar -->
-    <?php include_once("ssi/location-bar.php"); ?>
+    
 
     <!-- Include Utility Header -->
     <?php include_once("ssi/utility-header.php"); ?>
@@ -140,39 +139,7 @@ Based on Twitter Bootstrap
             
             <?php include("ssi/section-service-group.php"); ?>
             
-            <div class="section" id="locations-near-you">
-                <div class="container">
-                    
-                    
-                        <div class="group">
-                            <div class="three-quarters">
-                                <h2 class="m-b-0">Locations Near You</h2>
-                            </div>
-                            <div class="quarter">
-                                <a href="#locationFilters" class="btn btn-secondary filter-toggle toggle-more m-y btn-block-xs pull-right" role="button" data-toggle="collapse" data-parent="#locationFilters" aria-expanded="false" aria-controls="locationFilters"><span class="toggle-more">Show Filters <span class="ca-gov-icon-filter" aria-hidden="true"></span></span></a>
-                            </div>
-                            
-                            <div class="collapse locationFilters filter-group full-width" id="locationFilters">
-                                <!-- MapThat Facets -->
-                                <div id="mapthat_facets" class=""></div>
-                            </div>
-                        </div>
-                        
-                       
-                    <div class="group">
-                        <div class="col-md-8 col-md-push-4">
-                            <div class="mapthat" style="width: 100%; height: 400px">
-                                <!-- Placeholder for mapthat -->
-                                <div id="mapthat_map"></div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-md-pull-8">
-                            <!-- Mapthat List -->
-                            <div id="mapthat_list"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            
             
             <div class="section section-understated">
                 <div class="container">
@@ -198,7 +165,7 @@ Based on Twitter Bootstrap
 
   <?php include_once("ssi/scripts.php"); ?>
   
-<script src="/js/libs/mapthat_script.js"></script>
+
 
 </body>
 

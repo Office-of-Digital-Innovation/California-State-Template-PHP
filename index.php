@@ -7,7 +7,7 @@
 
 <head>
     <!--        California State Template
-        Version 5.0.2
+        Version 5.0.3
 
         Based on Twitter Bootstrap
     -->
@@ -26,8 +26,7 @@
     <header role="banner" id="header" class="global-header fixed">
         <div id="skip-to-content"><a href="#main-content">Skip to Main Content</a></div>
         
-        <!-- Location Bar -->
-        <?php include_once("ssi/location-bar.php"); ?>
+        
     
         <!-- Include Utility Header -->
         <?php include_once("ssi/utility-header.php"); ?>

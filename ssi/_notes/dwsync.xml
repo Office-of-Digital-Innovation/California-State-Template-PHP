@@ -12,7 +12,6 @@
 <file name="head-css-js.php" server="waws-prod-dm1-025.ftp.azurewebsites.windows.net" local="131546578231911478" remote="131547597000000000" Dst="1" />
 <file name="header-slideshow-banner.php" server="waws-prod-dm1-025.ftp.azurewebsites.windows.net" local="131546578231941481" remote="131547597000000000" Dst="1" />
 <file name="mobile-controls.php" server="waws-prod-dm1-025.ftp.azurewebsites.windows.net" local="131546578231961483" remote="131547597000000000" Dst="1" />
-<file name="location-bar.php" server="waws-prod-dm1-025.ftp.azurewebsites.windows.net" local="131546578231951482" remote="131547597000000000" Dst="1" />
 <file name="navigation.php" server="waws-prod-dm1-025.ftp.azurewebsites.windows.net" local="131546578231971484" remote="131547597000000000" Dst="1" />
 <file name="scripts.php" server="waws-prod-dm1-025.ftp.azurewebsites.windows.net" local="131546578231981485" remote="131547597000000000" Dst="1" />
 <file name="search-results-standalone.php" server="waws-prod-dm1-025.ftp.azurewebsites.windows.net" local="131546578231991486" remote="131547597000000000" Dst="1" />
@@ -21,7 +20,6 @@
 <file name="section-data-visualizations.php" server="waws-prod-dm1-025.ftp.azurewebsites.windows.net" local="131546578232031490" remote="131547597000000000" Dst="1" />
 <file name="section-footer2.php" server="waws-prod-dm1-025.ftp.azurewebsites.windows.net" local="131546578232051492" remote="131547597000000000" Dst="1" />
 <file name="section-green-stats.php" server="waws-prod-dm1-025.ftp.azurewebsites.windows.net" local="131546578232071494" remote="131547597000000000" Dst="1" />
-<file name="section-locations-near-you.php" server="waws-prod-dm1-025.ftp.azurewebsites.windows.net" local="131546578232081495" remote="131547597000000000" Dst="1" />
 <file name="section-open-data.php" server="waws-prod-dm1-025.ftp.azurewebsites.windows.net" local="131546578232101497" remote="131547597000000000" Dst="1" />
 <file name="section-mobile-gallery.php" server="waws-prod-dm1-025.ftp.azurewebsites.windows.net" local="131546578232091496" remote="131547597000000000" Dst="1" />
 <file name="section-related-links.php" server="waws-prod-dm1-025.ftp.azurewebsites.windows.net" local="131546578232111498" remote="131547597000000000" Dst="1" />

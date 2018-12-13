@@ -8,7 +8,7 @@
                     <li><a href="/use.php">Conditions of Use</a></li>
                     <li><a href="/privacy.php">Privacy Policy</a></li>
                     <li><a href="/accessibility.php">Accessibility</a></li>
-                    <li><a href="/contact.php">Contact Us</a></li>
+                    <li><a href="/contact.php">Contact</a></li>
                 </ul>
             </div>
             <div class="quarter text-right">
